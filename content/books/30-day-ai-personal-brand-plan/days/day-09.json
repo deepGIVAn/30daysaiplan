@@ -1,0 +1,37 @@
+{
+  "dayNumber": 9,
+  "title": "Update All Your Social Bios",
+  "phase": "foundation",
+  "objective": "Ensure every platform tells the same brand story — consistent, clear, and compelling across all touchpoints.",
+  "whyItMatters": "Inconsistent bios confuse your audience. Consistency across platforms builds recognition and trust.",
+  "workSummary": [
+    "Audit bios on all active social platforms",
+    "Rewrite each bio using your positioning statement",
+    "Ensure visual consistency (photos, colors, tone)"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "My brand positioning is: [statement]. Write optimised bios for LinkedIn (220 chars), Instagram (150 chars), Twitter/X (160 chars), and a general website bio (100 words). Keep tone consistent and compelling."
+    }
+  ],
+  "reflectionPrompts": [
+    "Do all my bios tell the same story?",
+    "Is my value proposition clear on every platform?",
+    "Which platform bio needs the most work?"
+  ],
+  "actionSteps": [
+    "List all platforms where you have a public profile",
+    "Update each bio using your positioning statement",
+    "Use the AI prompt to create platform-specific versions",
+    "Ensure profile photos are consistent and professional",
+    "Screenshot your updated bios for reference"
+  ],
+  "optionalPost": "Aligned all my social bios today. Consistency is the compound interest of personal branding.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 10 – Record a 60-Second Branded Intro Video"
+}

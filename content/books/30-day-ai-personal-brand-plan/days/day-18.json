@@ -1,0 +1,37 @@
+{
+  "dayNumber": 18,
+  "title": "Create a Lead Magnet (Guide, Checklist, or eBook)",
+  "phase": "authority",
+  "objective": "Build a valuable free resource that attracts your ideal audience and grows your email list.",
+  "whyItMatters": "A lead magnet exchanges value for attention — it's the bridge between stranger and subscriber.",
+  "workSummary": [
+    "Choose a topic that solves a specific audience pain point",
+    "Create a 1–5 page guide, checklist, or template",
+    "Set up a simple landing page or LinkedIn lead gen form"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "My audience struggles with [pain point]. My expertise is in [area]. Suggest 3 lead magnet ideas (checklist, guide, template) and create an outline for the best one with 5-7 actionable sections."
+    }
+  ],
+  "reflectionPrompts": [
+    "What quick win could I give my audience for free?",
+    "Is this lead magnet aligned with my signature offer?",
+    "Would I have found this valuable 2 years ago?"
+  ],
+  "actionSteps": [
+    "Choose your lead magnet format and topic",
+    "Create the content (use AI for outline)",
+    "Design a simple cover in Canva",
+    "Set up a download link or landing page",
+    "Share it in a post with a clear call to action"
+  ],
+  "optionalPost": "Created my first lead magnet today. Give value first — trust and clients follow.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 19 – Offer Value — Free Consultation, Mentorship or Review"
+}

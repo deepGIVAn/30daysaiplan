@@ -1,0 +1,37 @@
+{
+  "dayNumber": 13,
+  "title": "Publish a Thought Leadership Post",
+  "phase": "visibility",
+  "objective": "Share your first (or next) piece of thought leadership content that demonstrates your expertise and point of view.",
+  "whyItMatters": "Thought leadership isn't about being the smartest — it's about having a clear point of view and sharing it generously.",
+  "workSummary": [
+    "Choose one content pillar and one subtopic",
+    "Write a post with a hook, insight, and call to action",
+    "Publish on LinkedIn or your primary platform"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "Write a thought leadership LinkedIn post about [topic] for my audience of [persona]. My point of view is [your angle]. Include a strong hook, 3 key insights, and a question to drive engagement. Keep it under 250 words."
+    }
+  ],
+  "reflectionPrompts": [
+    "Does this post reflect my unique point of view?",
+    "Would my ideal audience find this valuable?",
+    "Am I sharing insight or just information?"
+  ],
+  "actionSteps": [
+    "Choose your topic from a content pillar",
+    "Draft your post (use AI prompt for structure)",
+    "Add a compelling hook in the first line",
+    "Publish on your primary platform",
+    "Engage with every comment in the first 2 hours"
+  ],
+  "optionalPost": "Published my thought leadership post today. Your perspective is your power — share it.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 14 – Join or Launch 2 Strategic Online Communities"
+}

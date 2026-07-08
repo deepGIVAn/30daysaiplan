@@ -1,0 +1,37 @@
+{
+  "dayNumber": 29,
+  "title": "Craft Your Signature Offer",
+  "phase": "momentum",
+  "objective": "Define the one offer that encapsulates your brand value — what you sell and why someone should buy from you.",
+  "whyItMatters": "A signature offer turns your brand into a business. It answers the question: 'How can I work with you?'",
+  "workSummary": [
+    "Define your offer: what it is, who it's for, and the transformation it delivers",
+    "Price it based on value, not time",
+    "Write a compelling offer description"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "Help me craft my signature offer. My expertise: [area]. My audience: [persona]. My differentiator: [angle]. Include: offer name, target client, transformation promise, deliverables, and a compelling description under 200 words."
+    }
+  ],
+  "reflectionPrompts": [
+    "Does my offer solve a real, urgent problem?",
+    "Is the transformation clear and compelling?",
+    "Would I buy this offer at this price?"
+  ],
+  "actionSteps": [
+    "Define your offer name and transformation promise",
+    "List deliverables and timeline",
+    "Write your offer description",
+    "Set your pricing based on value delivered",
+    "Add your offer to your website or LinkedIn"
+  ],
+  "optionalPost": "Crafted my signature offer today. A brand without an offer is just a hobby.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 30 – Build Your Brand Performance Tracker"
+}

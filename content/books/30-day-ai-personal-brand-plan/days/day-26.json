@@ -1,0 +1,37 @@
+{
+  "dayNumber": 26,
+  "title": "Build Your Dream List (Clients, Partners, Platforms)",
+  "phase": "momentum",
+  "objective": "Get strategic about who you want to work with — create a target list of dream clients, partners, and platforms.",
+  "whyItMatters": "A dream list turns vague ambition into focused action. You can't attract what you haven't named.",
+  "workSummary": [
+    "List 10 dream clients you'd love to work with",
+    "List 5 dream partners for collaboration",
+    "List 3 dream platforms (podcasts, publications, stages)"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "My brand positioning is [statement] and I serve [audience]. Help me brainstorm 10 dream clients, 5 collaboration partners, and 3 media platforms I should target. For each, suggest one specific action to get on their radar."
+    }
+  ],
+  "reflectionPrompts": [
+    "Are my dream clients aligned with my values and positioning?",
+    "What's one step I could take toward my #1 dream client this week?",
+    "Am I thinking big enough?"
+  ],
+  "actionSteps": [
+    "Write your dream client list (10 names/companies)",
+    "Write your dream partner list (5 names)",
+    "Write your dream platform list (3 targets)",
+    "Choose one person/company and take one outreach action",
+    "Review and update your dream list monthly"
+  ],
+  "optionalPost": "Built my dream list today. Name your targets — then take aim.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 27 – Launch a 7-Day Brand-Aligned Challenge"
+}

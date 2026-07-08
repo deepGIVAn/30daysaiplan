@@ -1,0 +1,37 @@
+{
+  "dayNumber": 27,
+  "title": "Launch a 7-Day Brand-Aligned Challenge",
+  "phase": "momentum",
+  "objective": "Create a short challenge that engages your audience, demonstrates your expertise, and grows your community.",
+  "whyItMatters": "Challenges create momentum, community, and content — all at once. They're a brand-building accelerator.",
+  "workSummary": [
+    "Design a 7-day challenge aligned with your content pillars",
+    "Create daily prompts and a simple participation mechanism",
+    "Announce and launch the challenge"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "Design a 7-day personal branding challenge for my audience of [persona]. Each day should have a theme, a 10-minute action, and a shareable prompt. Align with my content pillars: [pillars]. Include an announcement post."
+    }
+  ],
+  "reflectionPrompts": [
+    "Is this challenge genuinely valuable or just engagement bait?",
+    "Can I commit to showing up daily for 7 days?",
+    "How will I keep participants engaged throughout?"
+  ],
+  "actionSteps": [
+    "Outline your 7-day challenge themes",
+    "Write daily prompts and actions",
+    "Create a hashtag for participants",
+    "Publish your announcement post",
+    "Engage with every participant daily"
+  ],
+  "optionalPost": "Launching my 7-day brand challenge! Join me — link in comments. #BrandAuthorityChallenge",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 28 – Build & Launch Your Personal Content Calendar"
+}

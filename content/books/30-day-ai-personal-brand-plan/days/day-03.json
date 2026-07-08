@@ -1,0 +1,37 @@
+{
+  "dayNumber": 3,
+  "title": "Define Your Target Audience Persona",
+  "phase": "clarity",
+  "objective": "Get crystal clear on who you're building your brand for — the specific people you want to influence, serve, and attract.",
+  "whyItMatters": "A brand that tries to speak to everyone speaks to no one. Clarity about your audience sharpens every message you create.",
+  "workSummary": [
+    "Define your ideal audience demographics and psychographics",
+    "Identify their pain points, goals, and where they spend time online",
+    "Create a one-paragraph audience persona document"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "I am building a personal brand as a [your role/industry]. Help me create a detailed target audience persona including demographics, pain points, goals, and the platforms where they are most active."
+    }
+  ],
+  "reflectionPrompts": [
+    "Who do I most enjoy serving or leading?",
+    "What problem am I uniquely positioned to solve for them?",
+    "Where does my audience already spend their attention?"
+  ],
+  "actionSteps": [
+    "Write a one-paragraph description of your ideal audience",
+    "List 3 pain points your audience faces",
+    "List 3 goals your audience wants to achieve",
+    "Identify 2 platforms where your audience is most active",
+    "Save your persona as a reference for all future content"
+  ],
+  "optionalPost": "Got clear on who I'm building my brand for today. When you know your audience, every post has purpose.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 4 – Craft Your Brand Vision & Purpose"
+}

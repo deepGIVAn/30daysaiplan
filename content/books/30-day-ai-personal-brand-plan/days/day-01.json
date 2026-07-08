@@ -1,0 +1,38 @@
+{
+  "dayNumber": 1,
+  "title": "Conduct a Personal Brand Audit",
+  "phase": "clarity",
+  "objective": "Get brutally honest about your current brand footprint — online and offline — and uncover what needs to evolve.",
+  "whyItMatters": "Visibility isn't just about being online. It's about being positioned where your audience is looking — with intention, strategy, and presence.",
+  "workSummary": [
+    "Review your digital presence: Google results, LinkedIn, social profiles",
+    "Check professional perception — how would others introduce you?",
+    "Audit your content and communication consistency",
+    "Rate each area from 1–5 and note one proud moment and one urgent improvement"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "I'm conducting a personal brand audit. Here is my LinkedIn About section and bio: [paste here]. Please review my digital presence and give me 3 specific observations about what's working, what's misaligned, and what I should improve first."
+    }
+  ],
+  "reflectionPrompts": [
+    "What is one thing I'm proud of in my current brand?",
+    "What area urgently needs improvement?",
+    "How aligned is my online presence with who I want to become?"
+  ],
+  "actionSteps": [
+    "Google your name in Incognito Mode — take a screenshot",
+    "Review LinkedIn and social profiles — write 3 key observations",
+    "Use the AI prompt to get fast feedback",
+    "Capture one insight you didn't expect",
+    "Identify one branding asset you'll improve this week"
+  ],
+  "optionalPost": "Just completed a personal brand audit today — the difference between perception and intention is real. Time to realign my brand with who I truly am.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 2 – Identify Your Top 3 Brand Values"
+}

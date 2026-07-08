@@ -1,0 +1,37 @@
+{
+  "dayNumber": 5,
+  "title": "Write Your One-Line Brand Positioning Statement",
+  "phase": "clarity",
+  "objective": "Distill your entire brand into one memorable line that tells people who you are, who you serve, and what makes you different.",
+  "whyItMatters": "When you can position yourself in one line, every conversation, bio, and pitch becomes sharper and more confident.",
+  "workSummary": [
+    "Use the positioning formula: I help [audience] achieve [outcome] through [unique approach]",
+    "Test your statement with the 'elevator test' — can someone repeat it back?",
+    "Refine until it's clear, specific, and memorable"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "My audience is [persona], my values are [values], and my differentiator is [what makes you unique]. Write 5 variations of a one-line brand positioning statement using the formula: I help [audience] achieve [outcome] through [approach]."
+    }
+  ],
+  "reflectionPrompts": [
+    "Can I say my positioning statement in under 10 seconds?",
+    "Does it clearly communicate who I help and how?",
+    "Would my ideal client immediately recognize themselves?"
+  ],
+  "actionSteps": [
+    "Draft 3 versions of your positioning statement",
+    "Use the AI prompt to generate and refine options",
+    "Choose your final one-line statement",
+    "Test it with one trusted colleague or friend",
+    "Add it to your notes app for easy access"
+  ],
+  "optionalPost": "Nailed my one-line brand positioning today. Clarity in one sentence changes everything.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 6 – Build Your Signature Story"
+}

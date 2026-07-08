@@ -1,0 +1,37 @@
+{
+  "dayNumber": 12,
+  "title": "Define Your 3 Core Content Pillars",
+  "phase": "visibility",
+  "objective": "Establish the three themes you'll consistently create content around — your brand's editorial foundation.",
+  "whyItMatters": "Content pillars eliminate guesswork. You'll always know what to post and why it matters to your audience.",
+  "workSummary": [
+    "Identify 3 themes aligned with your expertise and audience needs",
+    "Define 2–3 subtopics under each pillar",
+    "Map pillars to your brand values and positioning"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "My positioning is [statement], my audience is [persona], and my expertise is in [area]. Define 3 core content pillars with 3 subtopics each that will establish my thought leadership."
+    }
+  ],
+  "reflectionPrompts": [
+    "What topics could I talk about for hours?",
+    "What does my audience need to learn from me?",
+    "Do my pillars support my positioning statement?"
+  ],
+  "actionSteps": [
+    "List 5 topics you could teach or discuss",
+    "Narrow to 3 core content pillars",
+    "Define 3 subtopics under each pillar",
+    "Use the AI prompt to validate your pillars",
+    "Save your content pillar document"
+  ],
+  "optionalPost": "Defined my 3 core content pillars today. When you know what to say, showing up becomes easy.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 13 – Publish a Thought Leadership Post"
+}

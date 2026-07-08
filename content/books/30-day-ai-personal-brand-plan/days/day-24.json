@@ -1,0 +1,37 @@
+{
+  "dayNumber": 24,
+  "title": "Attend a Virtual or In-Person Networking Event",
+  "phase": "momentum",
+  "objective": "Show up in real (or virtual) rooms where your ideal connections gather — and make yourself memorable.",
+  "whyItMatters": "Online branding gets you noticed. In-person (or live virtual) connection turns notice into relationship.",
+  "workSummary": [
+    "Find one relevant event happening this week",
+    "Prepare your 30-second intro and 3 conversation starters",
+    "Follow up with every meaningful connection within 24 hours"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "I'm attending a [type] event for [industry] professionals. Give me 3 conversation starters, a 30-second intro, and 3 thoughtful questions I can ask other attendees to build meaningful connections."
+    }
+  ],
+  "reflectionPrompts": [
+    "Am I going to give or to get?",
+    "What's my follow-up plan for new connections?",
+    "How will I stand out without being salesy?"
+  ],
+  "actionSteps": [
+    "Find and register for one event this week",
+    "Prepare your intro and conversation starters",
+    "Attend and aim for 3 meaningful conversations",
+    "Connect on LinkedIn with everyone you meet",
+    "Send follow-up messages within 24 hours"
+  ],
+  "optionalPost": "Attended a networking event today. Show up in person — your brand is built in conversations.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 25 – Co-Create with a Partner"
+}

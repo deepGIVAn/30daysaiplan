@@ -1,0 +1,37 @@
+{
+  "dayNumber": 11,
+  "title": "Build a Personal Visual Identity",
+  "phase": "visibility",
+  "objective": "Define the visual elements that make your brand recognizable — colors, fonts, and imagery style.",
+  "whyItMatters": "Visual consistency makes your brand instantly recognizable in a crowded feed.",
+  "workSummary": [
+    "Choose 2–3 brand colors that reflect your values",
+    "Select fonts for headings and body text",
+    "Create a simple brand mood board"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "My brand values are [values] and my positioning is [statement]. Suggest a personal brand color palette (3 colors with hex codes), font pairings, and visual style guidelines for my social media content."
+    }
+  ],
+  "reflectionPrompts": [
+    "What colors feel authentically 'me'?",
+    "Is my visual style consistent across platforms?",
+    "Would someone recognize my content without seeing my name?"
+  ],
+  "actionSteps": [
+    "Choose 3 brand colors and note their hex codes",
+    "Select heading and body fonts",
+    "Create a simple mood board (Canva or Pinterest)",
+    "Use the AI prompt for palette suggestions",
+    "Apply your colors to one social media template"
+  ],
+  "optionalPost": "Built my personal visual identity today. How you look is part of how you're remembered.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 12 – Define Your 3 Core Content Pillars"
+}

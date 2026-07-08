@@ -1,0 +1,37 @@
+{
+  "dayNumber": 21,
+  "title": "Highlight Proof of Authority",
+  "phase": "momentum",
+  "objective": "Curate and showcase the evidence that you're a recognized expert — credentials, features, awards, and results.",
+  "whyItMatters": "Authority isn't claimed — it's demonstrated. Proof removes doubt and accelerates trust.",
+  "workSummary": [
+    "Collect all proof points: media features, awards, certifications, results",
+    "Create an 'Authority' section on your profile or website",
+    "Weave proof into your content and bios"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "Here are my proof points: [list credentials, features, awards, results]. Help me write a compelling 'Proof of Authority' section for my LinkedIn profile and suggest how to weave these into my content strategy."
+    }
+  ],
+  "reflectionPrompts": [
+    "What proof do I have that I haven't been showcasing?",
+    "Would a skeptical stranger be convinced by my authority signals?",
+    "Am I letting results speak or just claims?"
+  ],
+  "actionSteps": [
+    "List all your authority proof points",
+    "Update your LinkedIn Featured section",
+    "Add proof to your website or bio",
+    "Use the AI prompt to write your authority narrative",
+    "Reference one proof point in your next post"
+  ],
+  "optionalPost": "Highlighted my proof of authority today. Don't hide your wins — they build trust.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 22 – Reach Out to 3 New Connections"
+}

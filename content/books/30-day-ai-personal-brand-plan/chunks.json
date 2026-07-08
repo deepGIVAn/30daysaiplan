@@ -1,0 +1,1052 @@
+[
+  {
+    "id": "day-1-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 1,
+    "section": "objective",
+    "text": "Get brutally honest about your current brand footprint — online and offline — and uncover what needs to evolve."
+  },
+  {
+    "id": "day-1-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 1,
+    "section": "whyItMatters",
+    "text": "Visibility isn't just about being online. It's about being positioned where your audience is looking — with intention, strategy, and presence."
+  },
+  {
+    "id": "day-1-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 1,
+    "section": "workSummary",
+    "text": "Review your digital presence: Google results, LinkedIn, social profiles Check professional perception — how would others introduce you? Audit your content and communication consistency Rate each area from 1–5 and note one proud moment and one urgent improvement"
+  },
+  {
+    "id": "day-1-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 1,
+    "section": "aiPrompt",
+    "text": "I'm conducting a personal brand audit. Here is my LinkedIn About section and bio: [paste here]. Please review my digital presence and give me 3 specific observations about what's working, what's misaligned, and what I should improve first."
+  },
+  {
+    "id": "day-1-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 1,
+    "section": "actionSteps",
+    "text": "Google your name in Incognito Mode — take a screenshot Review LinkedIn and social profiles — write 3 key observations Use the AI prompt to get fast feedback Capture one insight you didn't expect Identify one branding asset you'll improve this week"
+  },
+  {
+    "id": "day-2-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 2,
+    "section": "objective",
+    "text": "Anchor your personal brand in core values — the non-negotiables that define your decisions and shape how others experience you."
+  },
+  {
+    "id": "day-2-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 2,
+    "section": "whyItMatters",
+    "text": "Your values act as a filter. They tell you what to say yes to and give your audience a reason to trust you."
+  },
+  {
+    "id": "day-2-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 2,
+    "section": "workSummary",
+    "text": "Reflect on 2–3 peak brand moments in your career Choose your top 3 values from the curated brand values list Define what each value means to your brand in one line"
+  },
+  {
+    "id": "day-2-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 2,
+    "section": "aiPrompt",
+    "text": "Based on these peak moments in my career: [describe 2-3 moments], help me identify my top 3 brand values and write a one-line definition for each that I can use in my personal branding."
+  },
+  {
+    "id": "day-2-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 2,
+    "section": "actionSteps",
+    "text": "List 2–3 peak brand moments from your career Select your top 3 brand values Write a one-line definition for each value Use the AI prompt to sharpen your choices Save your values somewhere visible for daily reference"
+  },
+  {
+    "id": "day-3-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 3,
+    "section": "objective",
+    "text": "Get crystal clear on who you're building your brand for — the specific people you want to influence, serve, and attract."
+  },
+  {
+    "id": "day-3-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 3,
+    "section": "whyItMatters",
+    "text": "A brand that tries to speak to everyone speaks to no one. Clarity about your audience sharpens every message you create."
+  },
+  {
+    "id": "day-3-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 3,
+    "section": "workSummary",
+    "text": "Define your ideal audience demographics and psychographics Identify their pain points, goals, and where they spend time online Create a one-paragraph audience persona document"
+  },
+  {
+    "id": "day-3-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 3,
+    "section": "aiPrompt",
+    "text": "I am building a personal brand as a [your role/industry]. Help me create a detailed target audience persona including demographics, pain points, goals, and the platforms where they are most active."
+  },
+  {
+    "id": "day-3-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 3,
+    "section": "actionSteps",
+    "text": "Write a one-paragraph description of your ideal audience List 3 pain points your audience faces List 3 goals your audience wants to achieve Identify 2 platforms where your audience is most active Save your persona as a reference for all future content"
+  },
+  {
+    "id": "day-4-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 4,
+    "section": "objective",
+    "text": "Define where your brand is going and why it matters — creating a north star that guides every decision."
+  },
+  {
+    "id": "day-4-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 4,
+    "section": "whyItMatters",
+    "text": "Without vision, your brand drifts. A clear purpose magnetizes the right opportunities and repels the wrong ones."
+  },
+  {
+    "id": "day-4-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 4,
+    "section": "workSummary",
+    "text": "Write your 3-year brand vision statement Articulate your brand purpose in one powerful sentence Connect your values to your vision"
+  },
+  {
+    "id": "day-4-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 4,
+    "section": "aiPrompt",
+    "text": "My top 3 brand values are: [values]. My target audience is: [persona]. Help me write a compelling 3-year brand vision statement and a one-sentence brand purpose."
+  },
+  {
+    "id": "day-4-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 4,
+    "section": "actionSteps",
+    "text": "Draft your 3-year brand vision (2–3 sentences) Write your brand purpose in one sentence Use the AI prompt to refine your vision and purpose Read your vision aloud — does it energize you? Save your vision where you'll see it daily"
+  },
+  {
+    "id": "day-5-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 5,
+    "section": "objective",
+    "text": "Distill your entire brand into one memorable line that tells people who you are, who you serve, and what makes you different."
+  },
+  {
+    "id": "day-5-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 5,
+    "section": "whyItMatters",
+    "text": "When you can position yourself in one line, every conversation, bio, and pitch becomes sharper and more confident."
+  },
+  {
+    "id": "day-5-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 5,
+    "section": "workSummary",
+    "text": "Use the positioning formula: I help [audience] achieve [outcome] through [unique approach] Test your statement with the 'elevator test' — can someone repeat it back? Refine until it's clear, specific, and memorable"
+  },
+  {
+    "id": "day-5-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 5,
+    "section": "aiPrompt",
+    "text": "My audience is [persona], my values are [values], and my differentiator is [what makes you unique]. Write 5 variations of a one-line brand positioning statement using the formula: I help [audience] achieve [outcome] through [approach]."
+  },
+  {
+    "id": "day-5-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 5,
+    "section": "actionSteps",
+    "text": "Draft 3 versions of your positioning statement Use the AI prompt to generate and refine options Choose your final one-line statement Test it with one trusted colleague or friend Add it to your notes app for easy access"
+  },
+  {
+    "id": "day-6-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 6,
+    "section": "objective",
+    "text": "Craft the origin story that makes you memorable — the narrative that connects your past, present, and brand promise."
+  },
+  {
+    "id": "day-6-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 6,
+    "section": "whyItMatters",
+    "text": "Facts tell, stories sell. Your signature story is the emotional bridge between you and your audience."
+  },
+  {
+    "id": "day-6-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 6,
+    "section": "workSummary",
+    "text": "Identify the pivotal moment that shaped your brand journey Structure your story: challenge → turning point → transformation → mission Write a 2-minute version of your signature story"
+  },
+  {
+    "id": "day-6-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 6,
+    "section": "aiPrompt",
+    "text": "Help me craft my signature brand story. My background: [brief background]. My pivotal moment: [describe]. My mission now: [purpose]. Structure it as challenge → turning point → transformation → mission in about 200 words."
+  },
+  {
+    "id": "day-6-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 6,
+    "section": "actionSteps",
+    "text": "Write your pivotal moment in 3–5 sentences Draft your signature story using the 4-part structure Use the AI prompt to polish your narrative Practice telling your story in under 2 minutes Save both a written and spoken version"
+  },
+  {
+    "id": "day-7-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 7,
+    "section": "objective",
+    "text": "Discover what makes you unmistakably you — the unique angle only you can own in your market."
+  },
+  {
+    "id": "day-7-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 7,
+    "section": "whyItMatters",
+    "text": "In a crowded market, differentiation isn't optional. It's the reason someone chooses you over everyone else."
+  },
+  {
+    "id": "day-7-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 7,
+    "section": "workSummary",
+    "text": "List your unique skills, experiences, and perspectives Identify what you do differently from others in your space Articulate your differentiator in one clear statement"
+  },
+  {
+    "id": "day-7-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 7,
+    "section": "aiPrompt",
+    "text": "I work in [industry] and my competitors typically [common approach]. My unique experiences include [list]. Help me identify my brand differentiator and write a compelling statement about what makes me uniquely valuable."
+  },
+  {
+    "id": "day-7-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 7,
+    "section": "actionSteps",
+    "text": "List 5 things that make your approach unique Research 3 peers in your space — note what they emphasize Write your differentiator in one sentence Use the AI prompt to sharpen your angle Integrate your differentiator into your positioning statement"
+  },
+  {
+    "id": "day-8-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 8,
+    "section": "objective",
+    "text": "Transform your LinkedIn profile into a brand asset that attracts the right audience and opportunities."
+  },
+  {
+    "id": "day-8-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 8,
+    "section": "whyItMatters",
+    "text": "LinkedIn is often the first place people research you. A optimised profile builds trust before you ever speak."
+  },
+  {
+    "id": "day-8-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 8,
+    "section": "workSummary",
+    "text": "Rewrite your headline using your positioning statement Update your About section with your signature story Optimise your featured section and banner image"
+  },
+  {
+    "id": "day-8-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 8,
+    "section": "aiPrompt",
+    "text": "Here is my current LinkedIn About section: [paste]. My positioning: [statement]. My signature story: [brief]. Rewrite my LinkedIn headline and About section to be compelling, keyword-rich, and aligned with my personal brand."
+  },
+  {
+    "id": "day-8-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 8,
+    "section": "actionSteps",
+    "text": "Update your LinkedIn headline Rewrite your About section (use AI prompt) Add or update your banner and profile photo Add 2–3 featured items (posts, articles, or links) Ask a colleague to review your updated profile"
+  },
+  {
+    "id": "day-9-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 9,
+    "section": "objective",
+    "text": "Ensure every platform tells the same brand story — consistent, clear, and compelling across all touchpoints."
+  },
+  {
+    "id": "day-9-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 9,
+    "section": "whyItMatters",
+    "text": "Inconsistent bios confuse your audience. Consistency across platforms builds recognition and trust."
+  },
+  {
+    "id": "day-9-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 9,
+    "section": "workSummary",
+    "text": "Audit bios on all active social platforms Rewrite each bio using your positioning statement Ensure visual consistency (photos, colors, tone)"
+  },
+  {
+    "id": "day-9-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 9,
+    "section": "aiPrompt",
+    "text": "My brand positioning is: [statement]. Write optimised bios for LinkedIn (220 chars), Instagram (150 chars), Twitter/X (160 chars), and a general website bio (100 words). Keep tone consistent and compelling."
+  },
+  {
+    "id": "day-9-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 9,
+    "section": "actionSteps",
+    "text": "List all platforms where you have a public profile Update each bio using your positioning statement Use the AI prompt to create platform-specific versions Ensure profile photos are consistent and professional Screenshot your updated bios for reference"
+  },
+  {
+    "id": "day-10-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 10,
+    "section": "objective",
+    "text": "Create a short video introduction that captures your brand energy, positioning, and personality."
+  },
+  {
+    "id": "day-10-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 10,
+    "section": "whyItMatters",
+    "text": "Video builds trust faster than text. A 60-second intro makes you real, relatable, and memorable."
+  },
+  {
+    "id": "day-10-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 10,
+    "section": "workSummary",
+    "text": "Write a 60-second script using your positioning and story Record on your phone in good lighting Upload to LinkedIn, website, or email signature"
+  },
+  {
+    "id": "day-10-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 10,
+    "section": "aiPrompt",
+    "text": "Write a 60-second video introduction script for me. My positioning: [statement]. My signature story highlight: [key moment]. Tone: confident, warm, professional. Include a clear call to action at the end."
+  },
+  {
+    "id": "day-10-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 10,
+    "section": "actionSteps",
+    "text": "Write your 60-second script (use AI prompt) Practice reading it aloud 3 times Record your video in good lighting Watch it back and re-record if needed Upload to at least one platform today"
+  },
+  {
+    "id": "day-11-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 11,
+    "section": "objective",
+    "text": "Define the visual elements that make your brand recognizable — colors, fonts, and imagery style."
+  },
+  {
+    "id": "day-11-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 11,
+    "section": "whyItMatters",
+    "text": "Visual consistency makes your brand instantly recognizable in a crowded feed."
+  },
+  {
+    "id": "day-11-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 11,
+    "section": "workSummary",
+    "text": "Choose 2–3 brand colors that reflect your values Select fonts for headings and body text Create a simple brand mood board"
+  },
+  {
+    "id": "day-11-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 11,
+    "section": "aiPrompt",
+    "text": "My brand values are [values] and my positioning is [statement]. Suggest a personal brand color palette (3 colors with hex codes), font pairings, and visual style guidelines for my social media content."
+  },
+  {
+    "id": "day-11-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 11,
+    "section": "actionSteps",
+    "text": "Choose 3 brand colors and note their hex codes Select heading and body fonts Create a simple mood board (Canva or Pinterest) Use the AI prompt for palette suggestions Apply your colors to one social media template"
+  },
+  {
+    "id": "day-12-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 12,
+    "section": "objective",
+    "text": "Establish the three themes you'll consistently create content around — your brand's editorial foundation."
+  },
+  {
+    "id": "day-12-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 12,
+    "section": "whyItMatters",
+    "text": "Content pillars eliminate guesswork. You'll always know what to post and why it matters to your audience."
+  },
+  {
+    "id": "day-12-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 12,
+    "section": "workSummary",
+    "text": "Identify 3 themes aligned with your expertise and audience needs Define 2–3 subtopics under each pillar Map pillars to your brand values and positioning"
+  },
+  {
+    "id": "day-12-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 12,
+    "section": "aiPrompt",
+    "text": "My positioning is [statement], my audience is [persona], and my expertise is in [area]. Define 3 core content pillars with 3 subtopics each that will establish my thought leadership."
+  },
+  {
+    "id": "day-12-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 12,
+    "section": "actionSteps",
+    "text": "List 5 topics you could teach or discuss Narrow to 3 core content pillars Define 3 subtopics under each pillar Use the AI prompt to validate your pillars Save your content pillar document"
+  },
+  {
+    "id": "day-13-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 13,
+    "section": "objective",
+    "text": "Share your first (or next) piece of thought leadership content that demonstrates your expertise and point of view."
+  },
+  {
+    "id": "day-13-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 13,
+    "section": "whyItMatters",
+    "text": "Thought leadership isn't about being the smartest — it's about having a clear point of view and sharing it generously."
+  },
+  {
+    "id": "day-13-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 13,
+    "section": "workSummary",
+    "text": "Choose one content pillar and one subtopic Write a post with a hook, insight, and call to action Publish on LinkedIn or your primary platform"
+  },
+  {
+    "id": "day-13-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 13,
+    "section": "aiPrompt",
+    "text": "Write a thought leadership LinkedIn post about [topic] for my audience of [persona]. My point of view is [your angle]. Include a strong hook, 3 key insights, and a question to drive engagement. Keep it under 250 words."
+  },
+  {
+    "id": "day-13-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 13,
+    "section": "actionSteps",
+    "text": "Choose your topic from a content pillar Draft your post (use AI prompt for structure) Add a compelling hook in the first line Publish on your primary platform Engage with every comment in the first 2 hours"
+  },
+  {
+    "id": "day-14-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 14,
+    "section": "objective",
+    "text": "Place yourself where your audience gathers — communities are where relationships and opportunities compound."
+  },
+  {
+    "id": "day-14-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 14,
+    "section": "whyItMatters",
+    "text": "Your network is your net worth. Strategic communities put you in rooms with the right people."
+  },
+  {
+    "id": "day-14-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 14,
+    "section": "workSummary",
+    "text": "Identify 2 communities where your ideal audience is active Join and introduce yourself authentically Contribute value before asking for anything"
+  },
+  {
+    "id": "day-14-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 14,
+    "section": "aiPrompt",
+    "text": "My target audience is [persona] in the [industry] space. Recommend 5 strategic online communities (LinkedIn groups, Slack communities, forums) where I should participate to build my personal brand. Include why each is valuable."
+  },
+  {
+    "id": "day-14-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 14,
+    "section": "actionSteps",
+    "text": "Research and list 5 potential communities Join 2 communities today Write and post an authentic introduction Comment thoughtfully on 3 posts in each community Set a weekly reminder to engage consistently"
+  },
+  {
+    "id": "day-15-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 15,
+    "section": "objective",
+    "text": "Gather social proof that validates your brand promise — testimonials from people who've experienced your value."
+  },
+  {
+    "id": "day-15-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 15,
+    "section": "whyItMatters",
+    "text": "Third-party validation is more powerful than anything you say about yourself."
+  },
+  {
+    "id": "day-15-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 15,
+    "section": "workSummary",
+    "text": "Identify 5 people who could speak to your value Reach out with a specific, easy-to-answer request Collect at least 3 testimonials and publish them"
+  },
+  {
+    "id": "day-15-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 15,
+    "section": "aiPrompt",
+    "text": "Write a short, warm message I can send to past clients/colleagues asking for a testimonial. My brand positioning is [statement]. Make it easy for them — suggest 2-3 specific questions they could answer."
+  },
+  {
+    "id": "day-15-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 15,
+    "section": "actionSteps",
+    "text": "List 5 people who could give you a testimonial Send personalized requests to 3 of them Use the AI prompt to craft your request message Follow up with anyone who hasn't responded in 3 days Add received testimonials to LinkedIn or your website"
+  },
+  {
+    "id": "day-16-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 16,
+    "section": "objective",
+    "text": "Create a longer-form piece of content that establishes depth of expertise beyond social posts."
+  },
+  {
+    "id": "day-16-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 16,
+    "section": "whyItMatters",
+    "text": "Articles build SEO, credibility, and give your audience something substantial to share and reference."
+  },
+  {
+    "id": "day-16-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 16,
+    "section": "workSummary",
+    "text": "Choose a topic from your content pillars Write a 500–800 word article with clear structure Publish on LinkedIn Articles, Medium, or your blog"
+  },
+  {
+    "id": "day-16-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 16,
+    "section": "aiPrompt",
+    "text": "Write an outline for an 800-word thought leadership article on [topic] for [audience]. Include a compelling title, introduction hook, 4 main sections with key points, and a conclusion with a call to action."
+  },
+  {
+    "id": "day-16-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 16,
+    "section": "actionSteps",
+    "text": "Choose your article topic Create an outline (use AI prompt) Write and edit your article Add a compelling title and featured image Publish and share across your platforms"
+  },
+  {
+    "id": "day-17-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 17,
+    "section": "objective",
+    "text": "Demonstrate your impact through a real story — showing, not telling, what your brand delivers."
+  },
+  {
+    "id": "day-17-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 17,
+    "section": "whyItMatters",
+    "text": "Case studies turn abstract expertise into concrete proof. They're your most persuasive sales tool."
+  },
+  {
+    "id": "day-17-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 17,
+    "section": "workSummary",
+    "text": "Choose a client project or personal win to highlight Structure it: challenge → approach → result → lesson Publish as a post, article, or visual story"
+  },
+  {
+    "id": "day-17-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 17,
+    "section": "aiPrompt",
+    "text": "Help me structure a case study. The challenge was [describe], my approach was [describe], and the result was [outcome]. Format it as: Challenge → Approach → Result → Key Lesson. Keep it under 300 words for a LinkedIn post."
+  },
+  {
+    "id": "day-17-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 17,
+    "section": "actionSteps",
+    "text": "Select a success story to share Draft using the challenge → approach → result format Use the AI prompt to polish your narrative Add specific numbers or outcomes where possible Publish and pin to your profile if possible"
+  },
+  {
+    "id": "day-18-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 18,
+    "section": "objective",
+    "text": "Build a valuable free resource that attracts your ideal audience and grows your email list."
+  },
+  {
+    "id": "day-18-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 18,
+    "section": "whyItMatters",
+    "text": "A lead magnet exchanges value for attention — it's the bridge between stranger and subscriber."
+  },
+  {
+    "id": "day-18-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 18,
+    "section": "workSummary",
+    "text": "Choose a topic that solves a specific audience pain point Create a 1–5 page guide, checklist, or template Set up a simple landing page or LinkedIn lead gen form"
+  },
+  {
+    "id": "day-18-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 18,
+    "section": "aiPrompt",
+    "text": "My audience struggles with [pain point]. My expertise is in [area]. Suggest 3 lead magnet ideas (checklist, guide, template) and create an outline for the best one with 5-7 actionable sections."
+  },
+  {
+    "id": "day-18-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 18,
+    "section": "actionSteps",
+    "text": "Choose your lead magnet format and topic Create the content (use AI for outline) Design a simple cover in Canva Set up a download link or landing page Share it in a post with a clear call to action"
+  },
+  {
+    "id": "day-19-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 19,
+    "section": "objective",
+    "text": "Give before you ask — offer a slice of your expertise for free to build relationships and demonstrate value."
+  },
+  {
+    "id": "day-19-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 19,
+    "section": "whyItMatters",
+    "text": "Generosity is a brand strategy. When you give freely, you attract people who want to give back."
+  },
+  {
+    "id": "day-19-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 19,
+    "section": "workSummary",
+    "text": "Define what free value you can offer (15-min call, review, audit) Announce it publicly on your primary platform Deliver exceptional value to everyone who responds"
+  },
+  {
+    "id": "day-19-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 19,
+    "section": "aiPrompt",
+    "text": "I want to offer a free [consultation/mentorship/review] to my audience of [persona]. Write a compelling LinkedIn post announcing this offer, explaining the value, and including a clear way to book or respond."
+  },
+  {
+    "id": "day-19-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 19,
+    "section": "actionSteps",
+    "text": "Define your free offer (be specific) Write and publish your announcement post Respond to every inquiry within 24 hours Deliver your session and ask for feedback Follow up with a thank-you message"
+  },
+  {
+    "id": "day-20-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 20,
+    "section": "objective",
+    "text": "Expand your reach by appearing on someone else's platform — borrowing their audience to grow yours."
+  },
+  {
+    "id": "day-20-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 20,
+    "section": "whyItMatters",
+    "text": "Speaking and guest appearances multiply your visibility exponentially with each opportunity."
+  },
+  {
+    "id": "day-20-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 20,
+    "section": "workSummary",
+    "text": "Identify 5 podcasts, panels, or events in your niche Craft a compelling pitch highlighting your unique angle Send personalized outreach to at least 3 hosts"
+  },
+  {
+    "id": "day-20-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 20,
+    "section": "aiPrompt",
+    "text": "Write a podcast guest pitch for me. My expertise: [area]. My unique angle: [differentiator]. Target podcast theme: [niche]. Include a compelling subject line, 3-sentence pitch, and 3 topic ideas I'd love to discuss."
+  },
+  {
+    "id": "day-20-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 20,
+    "section": "actionSteps",
+    "text": "Research 5 relevant podcasts or events Write your guest pitch (use AI prompt) Send personalized pitches to 3 hosts Prepare 3 talking points for when they say yes Follow up after one week if no response"
+  },
+  {
+    "id": "day-21-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 21,
+    "section": "objective",
+    "text": "Curate and showcase the evidence that you're a recognized expert — credentials, features, awards, and results."
+  },
+  {
+    "id": "day-21-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 21,
+    "section": "whyItMatters",
+    "text": "Authority isn't claimed — it's demonstrated. Proof removes doubt and accelerates trust."
+  },
+  {
+    "id": "day-21-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 21,
+    "section": "workSummary",
+    "text": "Collect all proof points: media features, awards, certifications, results Create an 'Authority' section on your profile or website Weave proof into your content and bios"
+  },
+  {
+    "id": "day-21-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 21,
+    "section": "aiPrompt",
+    "text": "Here are my proof points: [list credentials, features, awards, results]. Help me write a compelling 'Proof of Authority' section for my LinkedIn profile and suggest how to weave these into my content strategy."
+  },
+  {
+    "id": "day-21-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 21,
+    "section": "actionSteps",
+    "text": "List all your authority proof points Update your LinkedIn Featured section Add proof to your website or bio Use the AI prompt to write your authority narrative Reference one proof point in your next post"
+  },
+  {
+    "id": "day-22-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 22,
+    "section": "objective",
+    "text": "Proactively build relationships with people who can amplify your brand — mentors, peers, and potential collaborators."
+  },
+  {
+    "id": "day-22-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 22,
+    "section": "whyItMatters",
+    "text": "Relationships are the infrastructure of a powerful personal brand. Strategic outreach opens doors."
+  },
+  {
+    "id": "day-22-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 22,
+    "section": "workSummary",
+    "text": "Identify 3 people you admire or want to learn from Send personalized connection requests with genuine value Follow up with a thoughtful message after connecting"
+  },
+  {
+    "id": "day-22-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 22,
+    "section": "aiPrompt",
+    "text": "Write 3 personalized LinkedIn connection request messages. Person 1: [name, role, why you admire them]. Person 2: [details]. Person 3: [details]. Each message should be genuine, specific, and under 300 characters."
+  },
+  {
+    "id": "day-22-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 22,
+    "section": "actionSteps",
+    "text": "Identify 3 strategic people to connect with Write personalized connection messages Send requests today Follow up with a value-add message after they accept Schedule one coffee chat or virtual call this week"
+  },
+  {
+    "id": "day-23-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 23,
+    "section": "objective",
+    "text": "Build visibility and relationships by adding thoughtful comments on posts from leaders in your space."
+  },
+  {
+    "id": "day-23-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 23,
+    "section": "whyItMatters",
+    "text": "Strategic commenting puts your name in front of thousands without creating your own content."
+  },
+  {
+    "id": "day-23-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 23,
+    "section": "workSummary",
+    "text": "Find 5 posts from industry leaders published in the last 24 hours Write thoughtful, value-adding comments (not 'Great post!') Engage consistently for 30 minutes today"
+  },
+  {
+    "id": "day-23-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 23,
+    "section": "aiPrompt",
+    "text": "Here is a LinkedIn post by [author] about [topic]: [paste post]. Write 3 thoughtful comment options that add value, show my expertise in [area], and invite further conversation. Each under 50 words."
+  },
+  {
+    "id": "day-23-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 23,
+    "section": "actionSteps",
+    "text": "Find 5 relevant posts from today Write and post 5 thoughtful comments Use the AI prompt if you're stuck on what to say Reply to any responses you receive Set a daily 15-minute engagement habit"
+  },
+  {
+    "id": "day-24-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 24,
+    "section": "objective",
+    "text": "Show up in real (or virtual) rooms where your ideal connections gather — and make yourself memorable."
+  },
+  {
+    "id": "day-24-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 24,
+    "section": "whyItMatters",
+    "text": "Online branding gets you noticed. In-person (or live virtual) connection turns notice into relationship."
+  },
+  {
+    "id": "day-24-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 24,
+    "section": "workSummary",
+    "text": "Find one relevant event happening this week Prepare your 30-second intro and 3 conversation starters Follow up with every meaningful connection within 24 hours"
+  },
+  {
+    "id": "day-24-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 24,
+    "section": "aiPrompt",
+    "text": "I'm attending a [type] event for [industry] professionals. Give me 3 conversation starters, a 30-second intro, and 3 thoughtful questions I can ask other attendees to build meaningful connections."
+  },
+  {
+    "id": "day-24-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 24,
+    "section": "actionSteps",
+    "text": "Find and register for one event this week Prepare your intro and conversation starters Attend and aim for 3 meaningful conversations Connect on LinkedIn with everyone you meet Send follow-up messages within 24 hours"
+  },
+  {
+    "id": "day-25-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 25,
+    "section": "objective",
+    "text": "Multiply your reach and credibility by collaborating with a complementary brand or creator."
+  },
+  {
+    "id": "day-25-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 25,
+    "section": "whyItMatters",
+    "text": "Collaboration exposes you to new audiences and adds a layer of social proof no solo content can match."
+  },
+  {
+    "id": "day-25-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 25,
+    "section": "workSummary",
+    "text": "Identify one potential collaboration partner Propose a specific co-creation idea (webinar, post, guide) Execute or schedule the collaboration"
+  },
+  {
+    "id": "day-25-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 25,
+    "section": "aiPrompt",
+    "text": "I want to co-create content with [partner name/role] who specializes in [their area]. My expertise is [your area]. Suggest 3 collaboration ideas (webinar, joint post, guide) and write a pitch message I can send them."
+  },
+  {
+    "id": "day-25-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 25,
+    "section": "actionSteps",
+    "text": "Identify one ideal collaboration partner Draft 3 co-creation ideas Send your collaboration pitch Schedule and plan the collaboration Promote the co-created content to both audiences"
+  },
+  {
+    "id": "day-26-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 26,
+    "section": "objective",
+    "text": "Get strategic about who you want to work with — create a target list of dream clients, partners, and platforms."
+  },
+  {
+    "id": "day-26-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 26,
+    "section": "whyItMatters",
+    "text": "A dream list turns vague ambition into focused action. You can't attract what you haven't named."
+  },
+  {
+    "id": "day-26-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 26,
+    "section": "workSummary",
+    "text": "List 10 dream clients you'd love to work with List 5 dream partners for collaboration List 3 dream platforms (podcasts, publications, stages)"
+  },
+  {
+    "id": "day-26-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 26,
+    "section": "aiPrompt",
+    "text": "My brand positioning is [statement] and I serve [audience]. Help me brainstorm 10 dream clients, 5 collaboration partners, and 3 media platforms I should target. For each, suggest one specific action to get on their radar."
+  },
+  {
+    "id": "day-26-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 26,
+    "section": "actionSteps",
+    "text": "Write your dream client list (10 names/companies) Write your dream partner list (5 names) Write your dream platform list (3 targets) Choose one person/company and take one outreach action Review and update your dream list monthly"
+  },
+  {
+    "id": "day-27-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 27,
+    "section": "objective",
+    "text": "Create a short challenge that engages your audience, demonstrates your expertise, and grows your community."
+  },
+  {
+    "id": "day-27-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 27,
+    "section": "whyItMatters",
+    "text": "Challenges create momentum, community, and content — all at once. They're a brand-building accelerator."
+  },
+  {
+    "id": "day-27-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 27,
+    "section": "workSummary",
+    "text": "Design a 7-day challenge aligned with your content pillars Create daily prompts and a simple participation mechanism Announce and launch the challenge"
+  },
+  {
+    "id": "day-27-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 27,
+    "section": "aiPrompt",
+    "text": "Design a 7-day personal branding challenge for my audience of [persona]. Each day should have a theme, a 10-minute action, and a shareable prompt. Align with my content pillars: [pillars]. Include an announcement post."
+  },
+  {
+    "id": "day-27-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 27,
+    "section": "actionSteps",
+    "text": "Outline your 7-day challenge themes Write daily prompts and actions Create a hashtag for participants Publish your announcement post Engage with every participant daily"
+  },
+  {
+    "id": "day-28-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 28,
+    "section": "objective",
+    "text": "Create a 30-day content calendar so you never wonder what to post — consistency becomes automatic."
+  },
+  {
+    "id": "day-28-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 28,
+    "section": "whyItMatters",
+    "text": "A content calendar removes daily decision fatigue and ensures your brand shows up consistently."
+  },
+  {
+    "id": "day-28-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 28,
+    "section": "workSummary",
+    "text": "Map 30 days of content using your 3 pillars Assign formats: posts, articles, videos, stories Schedule or batch-create your first week"
+  },
+  {
+    "id": "day-28-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 28,
+    "section": "aiPrompt",
+    "text": "Create a 30-day content calendar for my personal brand. Content pillars: [pillars]. Posting frequency: [X times/week]. Platforms: [LinkedIn, etc.]. Include topic, format, and hook for each post."
+  },
+  {
+    "id": "day-28-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 28,
+    "section": "actionSteps",
+    "text": "Create your 30-day content calendar Use the AI prompt to generate topic ideas Batch-write your first week's content Schedule posts using a tool or manual calendar Review and adjust based on engagement after 2 weeks"
+  },
+  {
+    "id": "day-29-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 29,
+    "section": "objective",
+    "text": "Define the one offer that encapsulates your brand value — what you sell and why someone should buy from you."
+  },
+  {
+    "id": "day-29-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 29,
+    "section": "whyItMatters",
+    "text": "A signature offer turns your brand into a business. It answers the question: 'How can I work with you?'"
+  },
+  {
+    "id": "day-29-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 29,
+    "section": "workSummary",
+    "text": "Define your offer: what it is, who it's for, and the transformation it delivers Price it based on value, not time Write a compelling offer description"
+  },
+  {
+    "id": "day-29-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 29,
+    "section": "aiPrompt",
+    "text": "Help me craft my signature offer. My expertise: [area]. My audience: [persona]. My differentiator: [angle]. Include: offer name, target client, transformation promise, deliverables, and a compelling description under 200 words."
+  },
+  {
+    "id": "day-29-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 29,
+    "section": "actionSteps",
+    "text": "Define your offer name and transformation promise List deliverables and timeline Write your offer description Set your pricing based on value delivered Add your offer to your website or LinkedIn"
+  },
+  {
+    "id": "day-30-objective",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 30,
+    "section": "objective",
+    "text": "Create a system to measure your brand growth — tracking the metrics that matter for long-term momentum."
+  },
+  {
+    "id": "day-30-whyItMatters",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 30,
+    "section": "whyItMatters",
+    "text": "What gets measured gets managed. A performance tracker keeps you accountable and shows your ROI."
+  },
+  {
+    "id": "day-30-workSummary",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 30,
+    "section": "workSummary",
+    "text": "Define 5–7 brand KPIs (followers, engagement, inbound leads, speaking invites) Set up a simple tracking spreadsheet or dashboard Record your baseline numbers today"
+  },
+  {
+    "id": "day-30-aiPrompt",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 30,
+    "section": "aiPrompt",
+    "text": "Help me create a personal brand performance tracker. My goals are [goals]. Suggest 7 KPIs I should track monthly, a simple spreadsheet structure, and benchmarks for what 'good' looks like in my industry."
+  },
+  {
+    "id": "day-30-actionSteps",
+    "bookSlug": "30-day-ai-personal-brand-plan",
+    "dayNumber": 30,
+    "section": "actionSteps",
+    "text": "List your 7 brand KPIs Record your baseline numbers today Set up a monthly tracking spreadsheet Schedule a monthly brand review on your calendar Celebrate your 30-day journey — you've built something real"
+  }
+]

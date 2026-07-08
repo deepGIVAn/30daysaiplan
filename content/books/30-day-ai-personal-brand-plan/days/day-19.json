@@ -1,0 +1,37 @@
+{
+  "dayNumber": 19,
+  "title": "Offer Value — Free Consultation, Mentorship or Review",
+  "phase": "authority",
+  "objective": "Give before you ask — offer a slice of your expertise for free to build relationships and demonstrate value.",
+  "whyItMatters": "Generosity is a brand strategy. When you give freely, you attract people who want to give back.",
+  "workSummary": [
+    "Define what free value you can offer (15-min call, review, audit)",
+    "Announce it publicly on your primary platform",
+    "Deliver exceptional value to everyone who responds"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "I want to offer a free [consultation/mentorship/review] to my audience of [persona]. Write a compelling LinkedIn post announcing this offer, explaining the value, and including a clear way to book or respond."
+    }
+  ],
+  "reflectionPrompts": [
+    "What can I offer in 15–30 minutes that would genuinely help someone?",
+    "Am I prepared to over-deliver on this offer?",
+    "How will I convert these conversations into relationships?"
+  ],
+  "actionSteps": [
+    "Define your free offer (be specific)",
+    "Write and publish your announcement post",
+    "Respond to every inquiry within 24 hours",
+    "Deliver your session and ask for feedback",
+    "Follow up with a thank-you message"
+  ],
+  "optionalPost": "Offering free [consultation/mentorship] this week. The best brands give before they ask.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 20 – Get Featured on a Podcast, Panel or Stage"
+}

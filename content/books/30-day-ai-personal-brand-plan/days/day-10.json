@@ -1,0 +1,37 @@
+{
+  "dayNumber": 10,
+  "title": "Record a 60-Second Branded Intro Video",
+  "phase": "foundation",
+  "objective": "Create a short video introduction that captures your brand energy, positioning, and personality.",
+  "whyItMatters": "Video builds trust faster than text. A 60-second intro makes you real, relatable, and memorable.",
+  "workSummary": [
+    "Write a 60-second script using your positioning and story",
+    "Record on your phone in good lighting",
+    "Upload to LinkedIn, website, or email signature"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "Write a 60-second video introduction script for me. My positioning: [statement]. My signature story highlight: [key moment]. Tone: confident, warm, professional. Include a clear call to action at the end."
+    }
+  ],
+  "reflectionPrompts": [
+    "Does my video sound like me — not a corporate robot?",
+    "Is my value proposition clear within the first 15 seconds?",
+    "What feeling do I want viewers to walk away with?"
+  ],
+  "actionSteps": [
+    "Write your 60-second script (use AI prompt)",
+    "Practice reading it aloud 3 times",
+    "Record your video in good lighting",
+    "Watch it back and re-record if needed",
+    "Upload to at least one platform today"
+  ],
+  "optionalPost": "Recorded my 60-second brand intro video today. Show up on camera — your audience wants to see the real you.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 11 – Build a Personal Visual Identity"
+}

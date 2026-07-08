@@ -1,0 +1,37 @@
+{
+  "dayNumber": 28,
+  "title": "Build & Launch Your Personal Content Calendar",
+  "phase": "momentum",
+  "objective": "Create a 30-day content calendar so you never wonder what to post — consistency becomes automatic.",
+  "whyItMatters": "A content calendar removes daily decision fatigue and ensures your brand shows up consistently.",
+  "workSummary": [
+    "Map 30 days of content using your 3 pillars",
+    "Assign formats: posts, articles, videos, stories",
+    "Schedule or batch-create your first week"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "Create a 30-day content calendar for my personal brand. Content pillars: [pillars]. Posting frequency: [X times/week]. Platforms: [LinkedIn, etc.]. Include topic, format, and hook for each post."
+    }
+  ],
+  "reflectionPrompts": [
+    "Does my calendar balance value, personality, and promotion?",
+    "Am I being realistic about my posting capacity?",
+    "Which content types get the most engagement from my audience?"
+  ],
+  "actionSteps": [
+    "Create your 30-day content calendar",
+    "Use the AI prompt to generate topic ideas",
+    "Batch-write your first week's content",
+    "Schedule posts using a tool or manual calendar",
+    "Review and adjust based on engagement after 2 weeks"
+  ],
+  "optionalPost": "Built my 30-day content calendar today. Consistency is a system, not a personality trait.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 29 – Craft Your Signature Offer"
+}

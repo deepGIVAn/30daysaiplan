@@ -1,0 +1,37 @@
+{
+  "dayNumber": 15,
+  "title": "Collect 3 Strategic Testimonials",
+  "phase": "visibility",
+  "objective": "Gather social proof that validates your brand promise — testimonials from people who've experienced your value.",
+  "whyItMatters": "Third-party validation is more powerful than anything you say about yourself.",
+  "workSummary": [
+    "Identify 5 people who could speak to your value",
+    "Reach out with a specific, easy-to-answer request",
+    "Collect at least 3 testimonials and publish them"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "Write a short, warm message I can send to past clients/colleagues asking for a testimonial. My brand positioning is [statement]. Make it easy for them — suggest 2-3 specific questions they could answer."
+    }
+  ],
+  "reflectionPrompts": [
+    "Who has experienced my value firsthand?",
+    "Am I making it easy for people to recommend me?",
+    "Where will I display these testimonials?"
+  ],
+  "actionSteps": [
+    "List 5 people who could give you a testimonial",
+    "Send personalized requests to 3 of them",
+    "Use the AI prompt to craft your request message",
+    "Follow up with anyone who hasn't responded in 3 days",
+    "Add received testimonials to LinkedIn or your website"
+  ],
+  "optionalPost": "Collected strategic testimonials today. Let others tell your story — it's more powerful than telling it yourself.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 16 – Publish an Article or Blog"
+}

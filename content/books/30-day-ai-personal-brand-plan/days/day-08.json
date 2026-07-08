@@ -1,0 +1,37 @@
+{
+  "dayNumber": 8,
+  "title": "Optimise Your LinkedIn Profile",
+  "phase": "foundation",
+  "objective": "Transform your LinkedIn profile into a brand asset that attracts the right audience and opportunities.",
+  "whyItMatters": "LinkedIn is often the first place people research you. A optimised profile builds trust before you ever speak.",
+  "workSummary": [
+    "Rewrite your headline using your positioning statement",
+    "Update your About section with your signature story",
+    "Optimise your featured section and banner image"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "Here is my current LinkedIn About section: [paste]. My positioning: [statement]. My signature story: [brief]. Rewrite my LinkedIn headline and About section to be compelling, keyword-rich, and aligned with my personal brand."
+    }
+  ],
+  "reflectionPrompts": [
+    "Does my headline immediately communicate my value?",
+    "Would a stranger understand what I do in 10 seconds?",
+    "Does my profile reflect my brand values and vision?"
+  ],
+  "actionSteps": [
+    "Update your LinkedIn headline",
+    "Rewrite your About section (use AI prompt)",
+    "Add or update your banner and profile photo",
+    "Add 2–3 featured items (posts, articles, or links)",
+    "Ask a colleague to review your updated profile"
+  ],
+  "optionalPost": "Just optimised my LinkedIn profile. Your profile is your digital handshake — make it count.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 9 – Update All Your Social Bios"
+}

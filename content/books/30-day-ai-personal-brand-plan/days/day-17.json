@@ -1,0 +1,37 @@
+{
+  "dayNumber": 17,
+  "title": "Share a Success Story or Case Study",
+  "phase": "authority",
+  "objective": "Demonstrate your impact through a real story — showing, not telling, what your brand delivers.",
+  "whyItMatters": "Case studies turn abstract expertise into concrete proof. They're your most persuasive sales tool.",
+  "workSummary": [
+    "Choose a client project or personal win to highlight",
+    "Structure it: challenge → approach → result → lesson",
+    "Publish as a post, article, or visual story"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "Help me structure a case study. The challenge was [describe], my approach was [describe], and the result was [outcome]. Format it as: Challenge → Approach → Result → Key Lesson. Keep it under 300 words for a LinkedIn post."
+    }
+  ],
+  "reflectionPrompts": [
+    "What result am I most proud of?",
+    "Can I share this story without breaking confidentiality?",
+    "What lesson will resonate with my audience?"
+  ],
+  "actionSteps": [
+    "Select a success story to share",
+    "Draft using the challenge → approach → result format",
+    "Use the AI prompt to polish your narrative",
+    "Add specific numbers or outcomes where possible",
+    "Publish and pin to your profile if possible"
+  ],
+  "optionalPost": "Shared a success story today. Results speak louder than promises.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 18 – Create a Lead Magnet (Guide, Checklist, or eBook)"
+}

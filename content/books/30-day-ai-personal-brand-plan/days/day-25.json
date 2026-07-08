@@ -1,0 +1,37 @@
+{
+  "dayNumber": 25,
+  "title": "Co-Create with a Partner",
+  "phase": "momentum",
+  "objective": "Multiply your reach and credibility by collaborating with a complementary brand or creator.",
+  "whyItMatters": "Collaboration exposes you to new audiences and adds a layer of social proof no solo content can match.",
+  "workSummary": [
+    "Identify one potential collaboration partner",
+    "Propose a specific co-creation idea (webinar, post, guide)",
+    "Execute or schedule the collaboration"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "I want to co-create content with [partner name/role] who specializes in [their area]. My expertise is [your area]. Suggest 3 collaboration ideas (webinar, joint post, guide) and write a pitch message I can send them."
+    }
+  ],
+  "reflectionPrompts": [
+    "Who has a complementary audience to mine?",
+    "What would make this collaboration valuable for both parties?",
+    "Am I bringing as much value as I'm asking for?"
+  ],
+  "actionSteps": [
+    "Identify one ideal collaboration partner",
+    "Draft 3 co-creation ideas",
+    "Send your collaboration pitch",
+    "Schedule and plan the collaboration",
+    "Promote the co-created content to both audiences"
+  ],
+  "optionalPost": "Co-creating with an amazing partner today. Collaboration multiplies your brand's reach.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 26 – Build Your Dream List (Clients, Partners, Platforms)"
+}

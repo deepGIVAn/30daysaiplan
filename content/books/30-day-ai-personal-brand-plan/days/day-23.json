@@ -1,0 +1,37 @@
+{
+  "dayNumber": 23,
+  "title": "Engage Strategically on LinkedIn Posts",
+  "phase": "momentum",
+  "objective": "Build visibility and relationships by adding thoughtful comments on posts from leaders in your space.",
+  "whyItMatters": "Strategic commenting puts your name in front of thousands without creating your own content.",
+  "workSummary": [
+    "Find 5 posts from industry leaders published in the last 24 hours",
+    "Write thoughtful, value-adding comments (not 'Great post!')",
+    "Engage consistently for 30 minutes today"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "Here is a LinkedIn post by [author] about [topic]: [paste post]. Write 3 thoughtful comment options that add value, show my expertise in [area], and invite further conversation. Each under 50 words."
+    }
+  ],
+  "reflectionPrompts": [
+    "Are my comments adding insight or just agreeing?",
+    "Am I engaging with the right people's audiences?",
+    "Could my comments lead to meaningful conversations?"
+  ],
+  "actionSteps": [
+    "Find 5 relevant posts from today",
+    "Write and post 5 thoughtful comments",
+    "Use the AI prompt if you're stuck on what to say",
+    "Reply to any responses you receive",
+    "Set a daily 15-minute engagement habit"
+  ],
+  "optionalPost": "Spent 30 minutes on strategic LinkedIn engagement today. Comments are micro-content — make them count.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 24 – Attend a Virtual or In-Person Networking Event"
+}

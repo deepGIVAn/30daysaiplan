@@ -1,0 +1,37 @@
+{
+  "dayNumber": 7,
+  "title": "Identify Your Brand Differentiator",
+  "phase": "foundation",
+  "objective": "Discover what makes you unmistakably you — the unique angle only you can own in your market.",
+  "whyItMatters": "In a crowded market, differentiation isn't optional. It's the reason someone chooses you over everyone else.",
+  "workSummary": [
+    "List your unique skills, experiences, and perspectives",
+    "Identify what you do differently from others in your space",
+    "Articulate your differentiator in one clear statement"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "I work in [industry] and my competitors typically [common approach]. My unique experiences include [list]. Help me identify my brand differentiator and write a compelling statement about what makes me uniquely valuable."
+    }
+  ],
+  "reflectionPrompts": [
+    "What do clients or colleagues say only I can do?",
+    "What intersection of skills do I uniquely occupy?",
+    "What would the market lose if I didn't show up?"
+  ],
+  "actionSteps": [
+    "List 5 things that make your approach unique",
+    "Research 3 peers in your space — note what they emphasize",
+    "Write your differentiator in one sentence",
+    "Use the AI prompt to sharpen your angle",
+    "Integrate your differentiator into your positioning statement"
+  ],
+  "optionalPost": "Identified what makes my brand different today. Different isn't better — different is remembered.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 8 – Optimise Your LinkedIn Profile"
+}

@@ -1,0 +1,37 @@
+{
+  "dayNumber": 20,
+  "title": "Get Featured on a Podcast, Panel or Stage",
+  "phase": "authority",
+  "objective": "Expand your reach by appearing on someone else's platform — borrowing their audience to grow yours.",
+  "whyItMatters": "Speaking and guest appearances multiply your visibility exponentially with each opportunity.",
+  "workSummary": [
+    "Identify 5 podcasts, panels, or events in your niche",
+    "Craft a compelling pitch highlighting your unique angle",
+    "Send personalized outreach to at least 3 hosts"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "Write a podcast guest pitch for me. My expertise: [area]. My unique angle: [differentiator]. Target podcast theme: [niche]. Include a compelling subject line, 3-sentence pitch, and 3 topic ideas I'd love to discuss."
+    }
+  ],
+  "reflectionPrompts": [
+    "What unique perspective can I bring to a podcast audience?",
+    "Am I pitching value to the host, not just promoting myself?",
+    "What's my backup plan if podcasts say no? (LinkedIn Live, webinars)"
+  ],
+  "actionSteps": [
+    "Research 5 relevant podcasts or events",
+    "Write your guest pitch (use AI prompt)",
+    "Send personalized pitches to 3 hosts",
+    "Prepare 3 talking points for when they say yes",
+    "Follow up after one week if no response"
+  ],
+  "optionalPost": "Pitched myself for podcast appearances today. Your voice deserves a bigger stage.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 21 – Highlight Proof of Authority"
+}

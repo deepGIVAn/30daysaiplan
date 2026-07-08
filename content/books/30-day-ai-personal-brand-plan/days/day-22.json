@@ -1,0 +1,37 @@
+{
+  "dayNumber": 22,
+  "title": "Reach Out to 3 New Connections",
+  "phase": "momentum",
+  "objective": "Proactively build relationships with people who can amplify your brand — mentors, peers, and potential collaborators.",
+  "whyItMatters": "Relationships are the infrastructure of a powerful personal brand. Strategic outreach opens doors.",
+  "workSummary": [
+    "Identify 3 people you admire or want to learn from",
+    "Send personalized connection requests with genuine value",
+    "Follow up with a thoughtful message after connecting"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "Write 3 personalized LinkedIn connection request messages. Person 1: [name, role, why you admire them]. Person 2: [details]. Person 3: [details]. Each message should be genuine, specific, and under 300 characters."
+    }
+  ],
+  "reflectionPrompts": [
+    "Am I reaching out to give or to get?",
+    "Is my message specific enough to stand out?",
+    "Who are 3 people whose audience overlaps with mine?"
+  ],
+  "actionSteps": [
+    "Identify 3 strategic people to connect with",
+    "Write personalized connection messages",
+    "Send requests today",
+    "Follow up with a value-add message after they accept",
+    "Schedule one coffee chat or virtual call this week"
+  ],
+  "optionalPost": "Reached out to 3 new connections today. Relationships are the compound interest of branding.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 23 – Engage Strategically on LinkedIn Posts"
+}

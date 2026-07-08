@@ -1,0 +1,37 @@
+{
+  "dayNumber": 6,
+  "title": "Build Your Signature Story",
+  "phase": "foundation",
+  "objective": "Craft the origin story that makes you memorable — the narrative that connects your past, present, and brand promise.",
+  "whyItMatters": "Facts tell, stories sell. Your signature story is the emotional bridge between you and your audience.",
+  "workSummary": [
+    "Identify the pivotal moment that shaped your brand journey",
+    "Structure your story: challenge → turning point → transformation → mission",
+    "Write a 2-minute version of your signature story"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "Help me craft my signature brand story. My background: [brief background]. My pivotal moment: [describe]. My mission now: [purpose]. Structure it as challenge → turning point → transformation → mission in about 200 words."
+    }
+  ],
+  "reflectionPrompts": [
+    "What moment changed the direction of my career or life?",
+    "What struggle will my audience relate to?",
+    "What transformation do I want my story to inspire?"
+  ],
+  "actionSteps": [
+    "Write your pivotal moment in 3–5 sentences",
+    "Draft your signature story using the 4-part structure",
+    "Use the AI prompt to polish your narrative",
+    "Practice telling your story in under 2 minutes",
+    "Save both a written and spoken version"
+  ],
+  "optionalPost": "Crafted my signature story today. Your story is your strategy — own it.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 7 – Identify Your Brand Differentiator"
+}

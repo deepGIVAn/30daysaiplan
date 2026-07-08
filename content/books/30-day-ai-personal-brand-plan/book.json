@@ -1,0 +1,54 @@
+{
+  "slug": "30-day-ai-personal-brand-plan",
+  "title": "The 30-Day AI Personal Brand Plan",
+  "tagline": "Build Influence, Visibility & Authority — One Day at a Time",
+  "description": "An action-based transformation guide with 30 daily steps to build your personal brand using AI — one intentional day at a time.",
+  "totalDays": 30,
+  "status": "available",
+  "durationLabel": "30 days · 10–15 min/day",
+  "author": "Dr. Jerome Joseph",
+  "publisher": "Global Brand Academy Pte Ltd",
+  "coverGradient": "from-amber-500 via-orange-600 to-rose-700",
+  "phases": [
+    {
+      "id": "clarity",
+      "name": "Clarity",
+      "days": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "foundation",
+      "name": "Foundation",
+      "days": [
+        6,
+        10
+      ]
+    },
+    {
+      "id": "visibility",
+      "name": "Visibility",
+      "days": [
+        11,
+        15
+      ]
+    },
+    {
+      "id": "authority",
+      "name": "Authority",
+      "days": [
+        16,
+        20
+      ]
+    },
+    {
+      "id": "momentum",
+      "name": "Momentum",
+      "days": [
+        21,
+        30
+      ]
+    }
+  ]
+}

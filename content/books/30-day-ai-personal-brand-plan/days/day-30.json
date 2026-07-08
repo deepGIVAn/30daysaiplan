@@ -1,0 +1,37 @@
+{
+  "dayNumber": 30,
+  "title": "Build Your Brand Performance Tracker",
+  "phase": "momentum",
+  "objective": "Create a system to measure your brand growth — tracking the metrics that matter for long-term momentum.",
+  "whyItMatters": "What gets measured gets managed. A performance tracker keeps you accountable and shows your ROI.",
+  "workSummary": [
+    "Define 5–7 brand KPIs (followers, engagement, inbound leads, speaking invites)",
+    "Set up a simple tracking spreadsheet or dashboard",
+    "Record your baseline numbers today"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "Help me create a personal brand performance tracker. My goals are [goals]. Suggest 7 KPIs I should track monthly, a simple spreadsheet structure, and benchmarks for what 'good' looks like in my industry."
+    }
+  ],
+  "reflectionPrompts": [
+    "What metrics actually indicate brand growth for me?",
+    "Am I tracking vanity metrics or meaningful ones?",
+    "What was my biggest win over these 30 days?"
+  ],
+  "actionSteps": [
+    "List your 7 brand KPIs",
+    "Record your baseline numbers today",
+    "Set up a monthly tracking spreadsheet",
+    "Schedule a monthly brand review on your calendar",
+    "Celebrate your 30-day journey — you've built something real"
+  ],
+  "optionalPost": "30 days done. Built my brand performance tracker and the results speak for themselves. Here's what changed. #BrandAuthorityChallenge #JeromeJoseph",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Congratulations — you've completed the 30-day journey!"
+}

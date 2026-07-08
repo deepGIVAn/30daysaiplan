@@ -1,0 +1,37 @@
+{
+  "dayNumber": 4,
+  "title": "Craft Your Brand Vision & Purpose",
+  "phase": "clarity",
+  "objective": "Define where your brand is going and why it matters — creating a north star that guides every decision.",
+  "whyItMatters": "Without vision, your brand drifts. A clear purpose magnetizes the right opportunities and repels the wrong ones.",
+  "workSummary": [
+    "Write your 3-year brand vision statement",
+    "Articulate your brand purpose in one powerful sentence",
+    "Connect your values to your vision"
+  ],
+  "aiPrompts": [
+    {
+      "label": "AI Power-Up Prompt",
+      "prompt": "My top 3 brand values are: [values]. My target audience is: [persona]. Help me write a compelling 3-year brand vision statement and a one-sentence brand purpose."
+    }
+  ],
+  "reflectionPrompts": [
+    "What impact do I want my brand to have in 3 years?",
+    "Why does my work matter beyond income?",
+    "What legacy do I want my brand to leave?"
+  ],
+  "actionSteps": [
+    "Draft your 3-year brand vision (2–3 sentences)",
+    "Write your brand purpose in one sentence",
+    "Use the AI prompt to refine your vision and purpose",
+    "Read your vision aloud — does it energize you?",
+    "Save your vision where you'll see it daily"
+  ],
+  "optionalPost": "Defined my brand vision and purpose today. A brand without direction is just noise.",
+  "hashtags": [
+    "#BrandAuthorityChallenge",
+    "#JeromeJoseph",
+    "#PersonalBrand"
+  ],
+  "tomorrowPreview": "Day 5 – Write Your One-Line Brand Positioning Statement"
+}
