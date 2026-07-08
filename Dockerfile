@@ -6,14 +6,9 @@ FROM base AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
-# Pin pnpm via package.json packageManager field (respects dependency build approvals)
-ENV PNPM_HOME="/pnpm"
-ENV PATH="$PNPM_HOME:$PATH"
-RUN corepack enable
-
 # Install dependencies based on the preferred package manager
-COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
-RUN CI=true pnpm install --frozen-lockfile
+COPY package.json package-lock.json ./
+RUN npm ci
 
 # 2. Rebuild the source code only when needed
 FROM base AS builder
@@ -25,7 +20,7 @@ COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_ENV=production
 
-RUN corepack enable && pnpm run build
+RUN npm run build
 
 # 3. Production image, copy all the files and run next
 FROM base AS runner
