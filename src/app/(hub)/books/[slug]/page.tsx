@@ -23,7 +23,6 @@ export default async function BookDashboardPage({ params }: PageProps) {
 
   const { user, dayProgress } = await getUserProgress(slug);
   const { recommendedDay } = calculateProgress(book.totalDays, dayProgress);
-  const todayContent = getDayContent(slug, recommendedDay);
 
   const daySummaries: DaySummary[] = Array.from(
     { length: book.totalDays },
@@ -42,8 +41,9 @@ export default async function BookDashboardPage({ params }: PageProps) {
       breadcrumbs={[{ label: "Dr. Jerome Joseph" }, { label: book.title }]}
       cara={{
         bookSlug: slug,
+        onDayPage: false,
         contextDay: recommendedDay,
-        dayTitle: todayContent?.title,
+        totalDays: book.totalDays,
       }}
     >
       <OverviewPanel

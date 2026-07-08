@@ -21,7 +21,9 @@ export function DashboardMobileNav() {
       href: `/books/${BOOK_SLUG}/today`,
       label: "Today",
       icon: CalendarCheck,
-      active: pathname.startsWith(`/books/${BOOK_SLUG}/day`),
+      active:
+        pathname.startsWith(`/books/${BOOK_SLUG}/day`) ||
+        pathname.endsWith("/today"),
     },
     {
       href: `/books/${BOOK_SLUG}/progress`,
@@ -38,13 +40,13 @@ export function DashboardMobileNav() {
   ];
 
   return (
-    <nav className="flex shrink-0 items-center justify-around border-t border-border bg-surface px-2 py-2 md:hidden">
+    <nav className="flex shrink-0 items-center justify-around border-t border-border bg-surface px-2 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] md:hidden">
       {links.map((link) => (
         <Link
           key={link.href}
           href={link.href}
           className={cn(
-            "flex flex-col items-center gap-1 rounded-xl px-4 py-1.5 text-[11px] font-semibold transition-colors",
+            "flex min-h-11 min-w-[4.5rem] flex-col items-center justify-center gap-1 rounded-xl px-3 py-1.5 text-[11px] font-semibold transition-colors",
             link.active
               ? "bg-primary-soft text-primary"
               : "text-muted-foreground",

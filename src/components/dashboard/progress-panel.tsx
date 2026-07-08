@@ -1,9 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import { Check, Trophy } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { PhaseTimeline } from "@/components/dashboard/journey-map";
 import { calculateProgress, calculateStreak } from "@/lib/progress/helpers";
@@ -35,7 +34,7 @@ export function ProgressPanel({
   const [dayProgress, setDayProgress] = useState<DayProgress[]>(serverProgress);
   const [reflections, setReflections] = useState<ReflectionEntry[]>(serverReflections);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!isAuthenticated) {
       const local = readLocalProgress(bookSlug, totalDays);
       setDayProgress(local.dayProgress);
@@ -100,7 +99,7 @@ export function ProgressPanel({
             30-day journey complete
           </h2>
           <p className="mt-1 text-sm text-muted-foreground">
-            Certificate earned — {userEmail || "Brand Builder"}
+            You completed all {totalDays} days — well done, {userEmail?.split("@")[0] || "Brand Builder"}.
           </p>
         </div>
       )}
@@ -118,7 +117,7 @@ export function ProgressPanel({
             <h2 className="font-display text-[16px] font-semibold text-foreground">Day-by-day</h2>
             <span className="text-fine text-muted-foreground">{completedDays} done</span>
           </div>
-          <div className="grid grid-cols-10 gap-1.5">
+          <div className="grid grid-cols-5 gap-2 sm:grid-cols-10 sm:gap-1.5">
             {Array.from({ length: totalDays }, (_, i) => i + 1).map((day) => {
               const isCompleted = completedSet.has(day);
               const hasActivity = dayProgress.some(
@@ -145,7 +144,7 @@ export function ProgressPanel({
             })}
           </div>
           <p className="text-fine mt-3 text-muted-foreground">
-            Green — completed · Red tint — in progress
+            Green — completed · Orange — in progress
           </p>
         </section>
       </div>
@@ -173,17 +172,6 @@ export function ProgressPanel({
         </section>
       )}
 
-      {!isAuthenticated && (
-        <div className="dashboard-card mt-6 flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <p className="text-sm font-semibold text-foreground">Progress saved on this device</p>
-            <p className="mt-0.5 text-fine text-muted-foreground">Sign up to sync to the cloud</p>
-          </div>
-          <Button size="sm" variant="outline" asChild>
-            <Link href="/signup">Sign up</Link>
-          </Button>
-        </div>
-      )}
     </div>
   );
 }

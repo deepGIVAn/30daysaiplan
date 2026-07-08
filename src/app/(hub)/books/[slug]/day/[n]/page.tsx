@@ -19,11 +19,13 @@ export default async function DayPage({ params }: PageProps) {
   const { slug, n } = await params;
   const dayNumber = parseInt(n, 10);
 
-  if (isNaN(dayNumber) || dayNumber < 1 || dayNumber > 30) notFound();
-
   const book = getBookMeta(slug);
+  if (!book) notFound();
+
+  if (isNaN(dayNumber) || dayNumber < 1 || dayNumber > book.totalDays) notFound();
+
   const day = getDayContent(slug, dayNumber);
-  if (!book || !day) notFound();
+  if (!day) notFound();
 
   const { user, checklist, completed, reflection } = await getDayUserData(
     slug,
@@ -42,8 +44,10 @@ export default async function DayPage({ params }: PageProps) {
       ]}
       cara={{
         bookSlug: slug,
+        onDayPage: true,
         contextDay: dayNumber,
         dayTitle: day.title,
+        totalDays: book.totalDays,
       }}
     >
       <DayPanel

@@ -11,8 +11,6 @@ import {
   LogIn,
   LogOut,
   User,
-  HelpCircle,
-  Settings,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
@@ -46,8 +44,6 @@ const MENU_LINKS = [
 const GENERAL_LINKS = [
   { label: "Book library", href: "/books", icon: Library },
   { label: "About", href: "/about", icon: User },
-  { label: "Settings", href: "/login", icon: Settings },
-  { label: "Help", href: "/about", icon: HelpCircle },
 ];
 
 function SidebarLink({
@@ -69,8 +65,8 @@ function SidebarLink({
       className={cn(
         "flex items-center gap-3 rounded-xl px-3 py-2.5 text-[14px] transition-colors",
         active
-          ? "bg-primary-soft font-semibold text-primary"
-          : "text-muted-foreground hover:bg-muted hover:text-foreground",
+          ? "bg-white/10 font-semibold text-primary"
+          : "text-white/55 hover:bg-white/5 hover:text-white",
       )}
     >
       <Icon className="h-[18px] w-[18px] shrink-0" strokeWidth={1.75} />
@@ -113,8 +109,18 @@ export function DashboardSidebar() {
   }
 
   return (
-    <aside className="hidden h-full w-[var(--sidebar-width)] shrink-0 flex-col bg-surface px-4 py-6 md:flex">
-      <Link href="/" className="mb-8 flex items-start gap-3 px-2">
+    <aside className="relative hidden h-full w-[var(--sidebar-width)] shrink-0 flex-col overflow-hidden bg-[#0A0B11] px-4 py-6 md:flex">
+      <Image
+        src="/media/sidebar-bg.png"
+        alt=""
+        fill
+        priority
+        className="object-cover object-center"
+        aria-hidden
+      />
+      <div className="absolute inset-0 bg-[#0A0B11]/40" aria-hidden />
+
+      <Link href="/" className="relative z-10 mb-8 flex items-start gap-3 px-2">
         <Image
           src="/media/book-cover.png"
           alt="The 30-Day AI Personal Brand Plan"
@@ -122,14 +128,13 @@ export function DashboardSidebar() {
           height={48}
           className="h-12 w-12 shrink-0 rounded-lg object-cover shadow-sm"
         />
-        <span className="font-display text-[13px] font-semibold leading-snug text-foreground">
-          The 30 Days AI Personal Brand Plan
+        <span className="font-display text-[13px] font-semibold leading-snug text-white">
+          The 30-Day AI Personal Brand Plan
         </span>
       </Link>
 
-      <nav className="flex-1 space-y-6 overflow-y-auto">
+      <nav className="relative z-10 flex-1 space-y-6 overflow-y-auto">
         <div>
-          <p className="nav-section-label">Menu</p>
           <div className="space-y-1">
             {MENU_LINKS.map((link) => (
               <SidebarLink
@@ -138,14 +143,13 @@ export function DashboardSidebar() {
                 active={link.match(pathname)}
                 icon={link.icon}
                 label={link.label}
-                badge={link.label === "Today's task" ? "30" : undefined}
               />
             ))}
           </div>
         </div>
 
         <div>
-          <p className="nav-section-label">General</p>
+          <p className="mb-2 px-3 text-[11px] font-medium text-white/35">General</p>
           <div className="space-y-1">
             {GENERAL_LINKS.map((link) => (
               <SidebarLink
@@ -160,7 +164,7 @@ export function DashboardSidebar() {
               <button
                 type="button"
                 onClick={handleSignOut}
-                className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-[14px] text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-[14px] text-white/55 transition-colors hover:bg-white/5 hover:text-white"
               >
                 <LogOut className="h-[18px] w-[18px]" strokeWidth={1.75} />
                 Sign out
@@ -170,7 +174,7 @@ export function DashboardSidebar() {
                 href="/login"
                 active={pathname === "/login"}
                 icon={LogIn}
-                label="Sign in"
+                label="Log in"
               />
             )}
           </div>

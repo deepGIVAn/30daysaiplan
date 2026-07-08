@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import { ArrowRight, ArrowUpRight, Flame, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -93,7 +93,7 @@ export function OverviewPanel({
 }: OverviewPanelProps) {
   const [dayProgress, setDayProgress] = useState<DayProgress[]>(serverProgress);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!isAuthenticated) {
       const { dayProgress: local } = readLocalProgress(bookSlug, totalDays);
       setDayProgress(local);
@@ -121,18 +121,11 @@ export function OverviewPanel({
             Plan your work and track your brand journey
           </p>
         </div>
-        <div className="flex flex-wrap gap-2">
-          <Button size="sm" asChild>
-            <Link href={`/books/${bookSlug}/today`}>
-              {completedDays === 0 ? "Start Day 1" : `Continue Day ${recommendedDay}`}
-            </Link>
-          </Button>
-          {!isAuthenticated && (
-            <Button size="sm" variant="outline" asChild>
-              <Link href="/signup">Sign up</Link>
-            </Button>
-          )}
-        </div>
+        <Button size="sm" asChild>
+          <Link href={`/books/${bookSlug}/today`}>
+            {completedDays === 0 ? "Start Day 1" : `Continue Day ${recommendedDay}`}
+          </Link>
+        </Button>
       </div>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
@@ -169,8 +162,13 @@ export function OverviewPanel({
         {!journeyDone && todaySummary ? (
           <section className="dashboard-card p-5">
             <h2 className="font-display text-[16px] font-semibold text-foreground">Reminder</h2>
-            <p className="mt-3 text-fine text-meta-brand">
-              Day {recommendedDay} · {todayPhase.name}
+            <p className="mt-3 inline-flex flex-wrap items-center gap-2">
+              <span className="inline-flex items-center rounded-lg bg-primary px-2.5 py-1 text-[12px] font-semibold tabular-nums text-primary-foreground">
+                Day {recommendedDay}
+              </span>
+              <span className="inline-flex items-center rounded-lg border border-border bg-muted/60 px-2.5 py-1 text-[12px] font-medium text-foreground/70">
+                {todayPhase.name}
+              </span>
             </p>
             <p className="mt-2 font-semibold text-[15px] leading-snug text-foreground">
               {todaySummary.title}
@@ -233,23 +231,6 @@ export function OverviewPanel({
         </section>
       </div>
 
-      {!isAuthenticated && (
-        <div className="dashboard-card mt-6 flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <p className="text-sm font-semibold text-foreground">
-              {completedDays > 0
-                ? "Progress saved on this device"
-                : "Save progress across devices"}
-            </p>
-            <p className="mt-0.5 text-fine text-muted-foreground">
-              Create a free account to sync your journey
-            </p>
-          </div>
-          <Button size="sm" variant="outline" asChild className="shrink-0">
-            <Link href="/signup">Sign up free</Link>
-          </Button>
-        </div>
-      )}
     </div>
   );
 }

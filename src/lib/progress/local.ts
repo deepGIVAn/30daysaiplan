@@ -39,3 +39,39 @@ export function readLocalProgress(
 
   return { dayProgress, reflections };
 }
+
+export function clearLocalProgress(bookSlug: string, totalDays: number) {
+  if (typeof window === "undefined") return;
+  for (let day = 1; day <= totalDays; day++) {
+    localStorage.removeItem(`bookhub:${bookSlug}:day:${day}`);
+  }
+}
+
+/** Upload guest localStorage progress to the server after sign-in. */
+export async function migrateLocalProgressToServer(bookSlug: string, totalDays: number) {
+  const { dayProgress, reflections } = readLocalProgress(bookSlug, totalDays);
+  if (dayProgress.length === 0) return;
+
+  const reflectionMap = new Map(reflections.map((r) => [r.dayNumber, r.content]));
+
+  await Promise.all(
+    dayProgress.map(async (day) => {
+      const response = await fetch("/api/progress", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          bookSlug,
+          dayNumber: day.day_number,
+          checklist: day.checklist_state || {},
+          reflection: reflectionMap.get(day.day_number) || "",
+          completed: day.completed,
+        }),
+      });
+      if (!response.ok) {
+        throw new Error("Failed to sync progress");
+      }
+    }),
+  );
+
+  clearLocalProgress(bookSlug, totalDays);
+}
