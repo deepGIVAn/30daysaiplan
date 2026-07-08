@@ -7,7 +7,6 @@ import { createClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { cn } from "@/lib/utils";
 
 const BOOK_DASHBOARD = "/books/30-day-ai-personal-brand-plan";
 const GUEST_COOKIE = "bookhub_guest";
@@ -90,7 +89,7 @@ export function AuthForm({ mode }: AuthFormProps) {
       if (signUpError) {
         setError(signUpError.message);
       } else {
-        setMessage("Check your email to confirm your account, or sign in if email confirmation is disabled.");
+        setMessage("Check your email to confirm your account, or log in if email confirmation is disabled.");
       }
     } else {
       const { error: signInError } = await supabase.auth.signInWithPassword({

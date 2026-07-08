@@ -40,7 +40,7 @@ export function AuthScreen({ mode }: AuthScreenProps) {
             <p className="mt-2 text-[14px] text-muted-foreground">
               {isSignup
                 ? "Create your account to save progress across devices."
-                : "Sign in to continue your 30-day brand journey."}
+                : "Log in to continue your 30-day brand journey."}
             </p>
           </div>
 
@@ -54,7 +54,7 @@ export function AuthScreen({ mode }: AuthScreenProps) {
                   : "text-muted-foreground hover:text-foreground",
               )}
             >
-              Sign in
+              Log in
             </Link>
             <Link
               href="/signup"
