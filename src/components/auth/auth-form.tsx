@@ -2,15 +2,41 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
+import { ArrowRight, Lock, Mail, User } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
+
+const BOOK_DASHBOARD = "/books/30-day-ai-personal-brand-plan";
+const GUEST_COOKIE = "bookhub_guest";
 
 interface AuthFormProps {
   mode: "login" | "signup";
+}
+
+function Field({
+  label,
+  icon: Icon,
+  children,
+}: {
+  label: string;
+  icon: React.ElementType;
+  children: React.ReactNode;
+}) {
+  return (
+    <div>
+      <label className="mb-1.5 block text-[13px] font-medium text-foreground">{label}</label>
+      <div className="relative">
+        <Icon
+          className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
+          strokeWidth={1.75}
+        />
+        {children}
+      </div>
+    </div>
+  );
 }
 
 export function AuthForm({ mode }: AuthFormProps) {
@@ -23,6 +49,11 @@ export function AuthForm({ mode }: AuthFormProps) {
   const [message, setMessage] = useState<string | null>(null);
 
   const isSignup = mode === "signup";
+
+  function continueAsGuest() {
+    document.cookie = `${GUEST_COOKIE}=1; path=/; max-age=${60 * 60 * 24 * 30}; SameSite=Lax`;
+    router.push(BOOK_DASHBOARD);
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -69,7 +100,8 @@ export function AuthForm({ mode }: AuthFormProps) {
       if (signInError) {
         setError(signInError.message);
       } else {
-        router.push("/books/30-day-ai-personal-brand-plan");
+        document.cookie = `${GUEST_COOKIE}=; path=/; max-age=0`;
+        router.push(BOOK_DASHBOARD);
         router.refresh();
       }
     }
@@ -78,84 +110,88 @@ export function AuthForm({ mode }: AuthFormProps) {
   }
 
   return (
-    <Card className="w-full max-w-md surface-elevated card-shadow">
-      <CardHeader className="text-center pb-2">
-        <CardTitle className="font-display text-lg font-semibold">
-          {isSignup ? "Create Your Account" : "Welcome Back"}
-        </CardTitle>
-        <CardDescription>
-          {isSignup
-            ? "Start your 30-day personal brand journey"
-            : "Continue your brand-building journey"}
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          {isSignup && (
-            <div>
-              <label className="mb-1.5 block text-sm text-muted-foreground">Display Name</label>
-              <Input
-                value={displayName}
-                onChange={(e) => setDisplayName(e.target.value)}
-                placeholder="Your name"
-              />
-            </div>
-          )}
-          <div>
-            <label className="mb-1.5 block text-sm text-muted-foreground">Email</label>
+    <div className="rounded-2xl border border-border bg-white p-6 shadow-[0_8px_30px_rgba(0,0,0,0.06)] sm:p-7">
+      <form onSubmit={handleSubmit} className="space-y-4">
+        {isSignup && (
+          <Field label="Display name" icon={User}>
             <Input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@example.com"
-              required
+              value={displayName}
+              onChange={(e) => setDisplayName(e.target.value)}
+              placeholder="Your name"
+              className="h-11 bg-[#fafbfc] pl-10"
             />
-          </div>
-          <div>
-            <label className="mb-1.5 block text-sm text-muted-foreground">Password</label>
-            <Input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="••••••••"
-              required
-              minLength={6}
-            />
-          </div>
+          </Field>
+        )}
 
-          {error && (
-            <p className="rounded-lg bg-red-500/10 px-3 py-2 text-sm text-red-400">{error}</p>
-          )}
-          {message && (
-            <p className="rounded-lg bg-success/10 px-3 py-2 text-sm text-success">
-              {message}
-            </p>
-          )}
+        <Field label="Email" icon={Mail}>
+          <Input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="you@example.com"
+            required
+            className="h-11 bg-[#fafbfc] pl-10"
+          />
+        </Field>
 
-          <Button type="submit" className="w-full" disabled={loading}>
-            {loading ? "Please wait..." : isSignup ? "Create Account" : "Sign In"}
-          </Button>
-        </form>
+        <Field label="Password" icon={Lock}>
+          <Input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="••••••••"
+            required
+            minLength={6}
+            className="h-11 bg-[#fafbfc] pl-10"
+          />
+        </Field>
 
-        <p className="mt-6 text-center text-sm text-muted-foreground">
-          {isSignup ? "Already have an account?" : "Don't have an account?"}{" "}
-          <Link
-            href={isSignup ? "/login" : "/signup"}
-            className="text-indigo-glow hover:text-indigo transition-colors"
-          >
-            {isSignup ? "Sign in" : "Sign up"}
-          </Link>
+        {error && (
+          <p className="rounded-xl border border-red-500/20 bg-red-500/10 px-3 py-2.5 text-sm text-red-600">
+            {error}
+          </p>
+        )}
+        {message && (
+          <p className="rounded-xl border border-success/20 bg-success/10 px-3 py-2.5 text-sm text-success">
+            {message}
+          </p>
+        )}
+
+        <Button type="submit" size="lg" className="mt-2 w-full" disabled={loading}>
+          {loading ? "Please wait…" : "Continue"}
+          {!loading && <ArrowRight className="h-4 w-4" strokeWidth={1.75} />}
+        </Button>
+      </form>
+
+      <div className="relative my-6">
+        <div className="absolute inset-0 flex items-center">
+          <span className="w-full border-t border-border" />
+        </div>
+        <p className="relative mx-auto w-fit bg-white px-3 text-[12px] text-muted-foreground">
+          or
         </p>
+      </div>
 
-        <p className="mt-2 text-center text-sm text-muted-foreground">
-          <Link
-            href="/books/30-day-ai-personal-brand-plan"
-            className="hover:text-foreground transition-colors"
-          >
-            Continue as guest →
-          </Link>
-        </p>
-      </CardContent>
-    </Card>
+      <Button
+        type="button"
+        variant="outline"
+        size="lg"
+        className="w-full border-dashed"
+        onClick={continueAsGuest}
+      >
+        Continue as guest
+      </Button>
+
+      <p className="mt-6 text-center text-[13px] leading-relaxed text-muted-foreground">
+        {isSignup ? (
+          <>
+            By creating an account, you agree to save your journey progress securely with your
+            profile.
+          </>
+        ) : (
+          <>Guest mode saves progress on this device only.</>
+        )}
+      </p>
+    </div>
   );
 }
