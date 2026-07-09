@@ -27,7 +27,12 @@ export default async function ProgressPage({ params }: PageProps) {
         { label: book.title, href: `/books/${slug}` },
         { label: "Progress" },
       ]}
-      cara={{ bookSlug: slug, contextDay: recommendedDay }}
+      cara={{
+        bookSlug: slug,
+        onDayPage: false,
+        contextDay: recommendedDay,
+        totalDays: book.totalDays,
+      }}
     >
       <ProgressPanel
         bookSlug={slug}

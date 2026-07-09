@@ -7,9 +7,12 @@ import { createClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { cn } from "@/lib/utils";
+
+import { migrateLocalProgressToServer } from "@/lib/progress/local";
 
 const BOOK_DASHBOARD = "/books/30-day-ai-personal-brand-plan";
+const BOOK_SLUG = "30-day-ai-personal-brand-plan";
+const TOTAL_DAYS = 30;
 const GUEST_COOKIE = "bookhub_guest";
 
 interface AuthFormProps {
@@ -79,7 +82,7 @@ export function AuthForm({ mode }: AuthFormProps) {
     }
 
     if (isSignup) {
-      const { error: signUpError } = await supabase.auth.signUp({
+      const { data, error: signUpError } = await supabase.auth.signUp({
         email,
         password,
         options: {
@@ -89,8 +92,17 @@ export function AuthForm({ mode }: AuthFormProps) {
       });
       if (signUpError) {
         setError(signUpError.message);
+      } else if (data.session) {
+        document.cookie = `${GUEST_COOKIE}=; path=/; max-age=0`;
+        try {
+          await migrateLocalProgressToServer(BOOK_SLUG, TOTAL_DAYS);
+        } catch {
+          setError("Account created, but some local progress could not be synced.");
+        }
+        router.push(BOOK_DASHBOARD);
+        router.refresh();
       } else {
-        setMessage("Check your email to confirm your account, or sign in if email confirmation is disabled.");
+        setMessage("Check your email to confirm your account, or log in if email confirmation is disabled.");
       }
     } else {
       const { error: signInError } = await supabase.auth.signInWithPassword({
@@ -101,6 +113,11 @@ export function AuthForm({ mode }: AuthFormProps) {
         setError(signInError.message);
       } else {
         document.cookie = `${GUEST_COOKIE}=; path=/; max-age=0`;
+        try {
+          await migrateLocalProgressToServer(BOOK_SLUG, TOTAL_DAYS);
+        } catch {
+          setError("Signed in, but some local progress could not be synced. Your data is still on this device.");
+        }
         router.push(BOOK_DASHBOARD);
         router.refresh();
       }
@@ -158,7 +175,7 @@ export function AuthForm({ mode }: AuthFormProps) {
         )}
 
         <Button type="submit" size="lg" className="mt-2 w-full" disabled={loading}>
-          {loading ? "Please wait…" : "Continue"}
+          {loading ? "Please wait…" : isSignup ? "Create account" : "Log in"}
           {!loading && <ArrowRight className="h-4 w-4" strokeWidth={1.75} />}
         </Button>
       </form>

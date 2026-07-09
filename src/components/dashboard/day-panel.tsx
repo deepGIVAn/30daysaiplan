@@ -14,6 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Textarea } from "@/components/ui/textarea";
 import { getPhaseForDay } from "@/lib/books/phases";
+import { buildShareDraft } from "@/lib/share/build-share-draft";
 import type { ChecklistState, DayContent } from "@/types";
 
 interface DayPanelProps {
@@ -52,21 +53,116 @@ export function DayPanel({
   const [reflection, setReflection] = useState(initialReflection);
   const [completed, setCompleted] = useState(initialCompleted);
   const [saving, setSaving] = useState(false);
+  const [shareDraft, setShareDraft] = useState(() =>
+    buildShareDraft(day, initialReflection),
+  );
+  const [shareEdited, setShareEdited] = useState(false);
 
   const storageKey = `bookhub:${bookSlug}:day:${day.dayNumber}`;
   const phase = getPhaseForDay(day.dayNumber);
 
   useEffect(() => {
-    if (!isAuthenticated) {
-      const saved = localStorage.getItem(storageKey);
-      if (saved) {
-        const data = JSON.parse(saved);
-        setChecklist(data.checklist || {});
-        setReflection(data.reflection || "");
-        setCompleted(data.completed || false);
+    const saved = localStorage.getItem(storageKey);
+    let existing: {
+      checklist?: ChecklistState;
+      reflection?: string;
+      completed?: boolean;
+      shareDraft?: string;
+    } = {};
+
+    if (saved) {
+      try {
+        existing = JSON.parse(saved);
+        if (!isAuthenticated) {
+          setChecklist(existing.checklist || {});
+          setReflection(existing.reflection || "");
+          setCompleted(existing.completed || false);
+        }
+        if (typeof existing.shareDraft === "string" && existing.shareDraft.trim()) {
+          setShareDraft(existing.shareDraft);
+          setShareEdited(true);
+        } else {
+          setShareDraft(
+            buildShareDraft(
+              day,
+              !isAuthenticated ? existing.reflection || "" : initialReflection,
+            ),
+          );
+          setShareEdited(false);
+        }
+      } catch {
+        localStorage.removeItem(storageKey);
+        existing = {};
+        setShareDraft(buildShareDraft(day, initialReflection));
+        setShareEdited(false);
       }
+    } else {
+      setShareDraft(buildShareDraft(day, initialReflection));
+      setShareEdited(false);
     }
-  }, [storageKey, isAuthenticated]);
+
+    // Seed localStorage so CARA can read live day state even before the user edits.
+    try {
+      const seededChecklist = isAuthenticated
+        ? initialChecklist
+        : existing.checklist || {};
+      const seededReflection = isAuthenticated
+        ? initialReflection
+        : existing.reflection || "";
+      const seededCompleted = isAuthenticated
+        ? initialCompleted
+        : !!existing.completed;
+      const seededShare =
+        typeof existing.shareDraft === "string" && existing.shareDraft.trim()
+          ? existing.shareDraft
+          : buildShareDraft(day, seededReflection);
+
+      localStorage.setItem(
+        storageKey,
+        JSON.stringify({
+          checklist: seededChecklist,
+          reflection: seededReflection,
+          completed: seededCompleted,
+          shareDraft: seededShare,
+        }),
+      );
+    } catch {
+      // ignore storage failures
+    }
+  }, [
+    storageKey,
+    isAuthenticated,
+    day,
+    initialReflection,
+    initialChecklist,
+    initialCompleted,
+  ]);
+
+  function persistShareDraft(nextDraft: string, edited: boolean) {
+    setShareDraft(nextDraft);
+    setShareEdited(edited);
+    try {
+      const existing = localStorage.getItem(storageKey);
+      const data = existing ? JSON.parse(existing) : {};
+      localStorage.setItem(
+        storageKey,
+        JSON.stringify({
+          checklist: data.checklist ?? checklist,
+          reflection: data.reflection ?? reflection,
+          completed: data.completed ?? completed,
+          shareDraft: nextDraft,
+        }),
+      );
+    } catch {
+      // ignore storage failures
+    }
+  }
+
+  function refreshShareDraft() {
+    const next = buildShareDraft(day, reflection);
+    persistShareDraft(next, false);
+    toast.success("Share draft refreshed with your latest reflection");
+  }
 
   const saveProgress = useCallback(
     async (updates: {
@@ -83,25 +179,34 @@ export function DayPanel({
         completed: updates.completed ?? completed,
       };
 
-      if (isAuthenticated) {
-        await fetch("/api/progress", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-        });
-      } else {
+      // Always mirror to localStorage so CARA can read live day state.
+      try {
         localStorage.setItem(
           storageKey,
           JSON.stringify({
             checklist: payload.checklist,
             reflection: payload.reflection,
             completed: payload.completed,
+            shareDraft,
           }),
         );
+      } catch {
+        // ignore storage failures
+      }
+
+      if (isAuthenticated) {
+        const response = await fetch("/api/progress", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        if (!response.ok) {
+          toast.error("Could not save progress. Please try again.");
+        }
       }
       setSaving(false);
     },
-    [bookSlug, day.dayNumber, checklist, reflection, completed, isAuthenticated, storageKey],
+    [bookSlug, day.dayNumber, checklist, reflection, completed, isAuthenticated, storageKey, shareDraft],
   );
 
   function handleChecklistChange(index: number, checked: boolean) {
@@ -115,20 +220,16 @@ export function DayPanel({
     toast.success("Prompt copied");
   }
 
-  const shareText = day.optionalPost
-    ? `${day.optionalPost}${day.hashtags?.length ? `\n\n${day.hashtags.join(" ")}` : ""}`
-    : "";
-
   function copyPost() {
-    navigator.clipboard.writeText(shareText);
+    navigator.clipboard.writeText(shareDraft);
     toast.success("Post copied — paste it anywhere");
   }
 
   function shareToLinkedIn() {
-    navigator.clipboard.writeText(shareText);
+    navigator.clipboard.writeText(shareDraft);
     toast.success("Post copied — paste it into the LinkedIn composer");
     window.open(
-      `https://www.linkedin.com/feed/?shareActive=true&text=${encodeURIComponent(shareText)}`,
+      `https://www.linkedin.com/feed/?shareActive=true&text=${encodeURIComponent(shareDraft)}`,
       "_blank",
       "noopener,noreferrer",
     );
@@ -136,7 +237,7 @@ export function DayPanel({
 
   function shareToX() {
     window.open(
-      `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`,
+      `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareDraft)}`,
       "_blank",
       "noopener,noreferrer",
     );
@@ -157,11 +258,14 @@ export function DayPanel({
         <header className="page-padding pt-8 pb-2 sm:pt-10 lg:pt-12">
           <div className="mx-auto max-w-[640px]">
           <div className="flex items-center justify-between gap-6">
-            <p className="text-meta text-meta-brand">
-              Day {day.dayNumber}
-              <span className="mx-1.5 text-border">·</span>
-              <span className="text-muted-foreground">{phase.name}</span>
-            </p>
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="inline-flex items-center rounded-lg bg-primary px-2.5 py-1 text-[12px] font-semibold tabular-nums text-primary-foreground">
+                Day {day.dayNumber}
+              </span>
+              <span className="inline-flex items-center rounded-lg border border-border bg-muted/60 px-2.5 py-1 text-[12px] font-medium text-foreground/70">
+                {phase.name}
+              </span>
+            </div>
 
             <nav className="flex items-center gap-1.5">
               {prevDay ? (
@@ -296,63 +400,86 @@ export function DayPanel({
               value={reflection}
               onChange={(e) => setReflection(e.target.value)}
               onBlur={() => saveProgress({ reflection })}
-              placeholder="Write your thoughts — saved automatically"
+              placeholder="Write your thoughts"
               rows={6}
               className="dashboard-card px-5 py-4 text-[17px] leading-[1.47] border-0"
             />
           </section>
 
-          {day.optionalPost && (
-            <section className="mt-14">
-              <SectionTitle detail="Optional">Share your progress</SectionTitle>
-              <div className="dashboard-card overflow-hidden p-0">
-                <div className="p-5">
-                  <p className="text-[15px] leading-[1.47] text-foreground/80">
-                    {day.optionalPost}
+          <section className="mt-14">
+            <SectionTitle>Share your progress</SectionTitle>
+            <p className="mb-4 text-[15px] leading-relaxed text-muted-foreground">
+              A ready-to-post draft with today&apos;s insight, what you worked on, and a takeaway.
+              Edit it so it sounds like you — then share.
+            </p>
+            <div className="dashboard-card overflow-hidden p-0">
+              <div className="border-b border-border px-5 py-3">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <p className="text-[12px] font-medium text-muted-foreground">
+                    LinkedIn / X draft
+                    {shareEdited ? " · edited" : " · generated"}
                   </p>
-                  {day.hashtags && (
-                    <p className="mt-3 text-[13px] text-brand-red/80">
-                      {day.hashtags.join("  ")}
-                    </p>
-                  )}
-                </div>
-                <div className="flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-border px-5 py-3.5">
                   <button
                     type="button"
-                    onClick={shareToLinkedIn}
-                    className="inline-flex items-center gap-1 text-[13px] font-semibold text-foreground/80 transition-opacity hover:opacity-70"
+                    onClick={refreshShareDraft}
+                    className="text-[12px] font-semibold text-primary transition-opacity hover:opacity-70"
                   >
-                    LinkedIn
-                    <ArrowUpRight className="h-3 w-3 text-muted-foreground" strokeWidth={2} />
-                  </button>
-                  <button
-                    type="button"
-                    onClick={shareToX}
-                    className="inline-flex items-center gap-1 text-[13px] font-semibold text-foreground/80 transition-opacity hover:opacity-70"
-                  >
-                    X
-                    <ArrowUpRight className="h-3 w-3 text-muted-foreground" strokeWidth={2} />
-                  </button>
-                  <button
-                    type="button"
-                    onClick={copyPost}
-                    className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    <Copy className="h-3 w-3" strokeWidth={1.75} />
-                    Copy
+                    Refresh from reflection
                   </button>
                 </div>
               </div>
-            </section>
-          )}
+              <Textarea
+                value={shareDraft}
+                onChange={(e) => persistShareDraft(e.target.value, true)}
+                rows={12}
+                className="min-h-[220px] resize-y rounded-none border-0 bg-transparent px-5 py-4 text-[15px] leading-[1.55] shadow-none focus-visible:ring-0"
+              />
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-border px-5 py-3.5">
+                <button
+                  type="button"
+                  onClick={shareToLinkedIn}
+                  className="inline-flex items-center gap-1 text-[13px] font-semibold text-foreground/80 transition-opacity hover:opacity-70"
+                >
+                  LinkedIn
+                  <ArrowUpRight className="h-3 w-3 text-muted-foreground" strokeWidth={2} />
+                </button>
+                <button
+                  type="button"
+                  onClick={shareToX}
+                  className="inline-flex items-center gap-1 text-[13px] font-semibold text-foreground/80 transition-opacity hover:opacity-70"
+                >
+                  X
+                  <ArrowUpRight className="h-3 w-3 text-muted-foreground" strokeWidth={2} />
+                </button>
+                <button
+                  type="button"
+                  onClick={copyPost}
+                  className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  <Copy className="h-3 w-3" strokeWidth={1.75} />
+                  Copy
+                </button>
+              </div>
+            </div>
+          </section>
           </div>
         </div>
       </div>
 
       <footer className="fixed inset-x-0 bottom-14 z-30 border-t border-border bg-surface px-5 py-3 backdrop-blur-xl sm:px-8 md:static md:bottom-auto md:z-auto md:px-8 md:py-4 lg:px-10">
-        <div className="mx-auto flex max-w-[640px] items-center justify-between gap-4">
+        <div className="mx-auto flex max-w-[640px] items-center justify-between gap-3">
           <p className="min-w-0 truncate text-[13px] text-muted-foreground">
-            {day.tomorrowPreview ? (
+            {completed && nextDay ? (
+              <>
+                <span className="font-semibold text-success">Day {day.dayNumber} done</span>
+                {day.tomorrowPreview ? (
+                  <>
+                    <span className="mx-1.5 text-border">·</span>
+                    {day.tomorrowPreview}
+                  </>
+                ) : null}
+              </>
+            ) : day.tomorrowPreview ? (
               <>
                 <span className="font-semibold text-foreground/60">Up next</span>
                 {"  "}
@@ -362,22 +489,44 @@ export function DayPanel({
               <span className="text-success">You&apos;ve finished the journey.</span>
             )}
           </p>
-          <Button
-            variant={completed ? "secondary" : "default"}
-            size="sm"
-            onClick={handleMarkComplete}
-            disabled={saving}
-            className="shrink-0 rounded-full px-4"
-          >
+
+          <div className="flex shrink-0 items-center gap-2">
             {completed ? (
               <>
-                <Check className="h-3.5 w-3.5" strokeWidth={2} />
-                Completed
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={handleMarkComplete}
+                  disabled={saving}
+                  className="rounded-full px-3 text-muted-foreground"
+                >
+                  <Check className="h-3.5 w-3.5" strokeWidth={2} />
+                  Undo
+                </Button>
+                {nextDay ? (
+                  <Button size="sm" asChild className="rounded-full px-4">
+                    <Link href={`/books/${bookSlug}/day/${nextDay}`}>
+                      Continue to Day {nextDay}
+                      <ChevronRight className="h-3.5 w-3.5" strokeWidth={2} />
+                    </Link>
+                  </Button>
+                ) : (
+                  <Button size="sm" asChild className="rounded-full px-4">
+                    <Link href={`/books/${bookSlug}/progress`}>View progress</Link>
+                  </Button>
+                )}
               </>
             ) : (
-              "Mark day complete"
+              <Button
+                size="sm"
+                onClick={handleMarkComplete}
+                disabled={saving}
+                className="rounded-full px-4"
+              >
+                Mark day complete
+              </Button>
             )}
-          </Button>
+          </div>
         </div>
       </footer>
     </div>

@@ -9,8 +9,10 @@ import { cn } from "@/lib/utils";
 
 interface CaraLauncherProps {
   bookSlug: string;
+  onDayPage?: boolean;
   contextDay: number;
   dayTitle?: string;
+  totalDays?: number;
 }
 
 function useIsMobile(breakpoint = 1024) {
@@ -27,7 +29,13 @@ function useIsMobile(breakpoint = 1024) {
   return isMobile;
 }
 
-export function CaraLauncher({ bookSlug, contextDay, dayTitle }: CaraLauncherProps) {
+export function CaraLauncher({
+  bookSlug,
+  onDayPage = false,
+  contextDay,
+  dayTitle,
+  totalDays,
+}: CaraLauncherProps) {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const isMobile = useIsMobile();
@@ -153,7 +161,7 @@ export function CaraLauncher({ bookSlug, contextDay, dayTitle }: CaraLauncherPro
         type="button"
         onClick={openPanel}
         className={cn(
-          "fixed bottom-6 right-5 z-40 flex flex-col items-center gap-1.5 border-0 bg-transparent p-0 shadow-none",
+          "fixed bottom-[4.5rem] right-5 z-40 flex flex-col items-center gap-1.5 border-0 bg-transparent p-0 shadow-none md:bottom-6",
         )}
         aria-label="Open CARA"
         aria-expanded={open}
@@ -163,7 +171,7 @@ export function CaraLauncher({ bookSlug, contextDay, dayTitle }: CaraLauncherPro
           size="xl"
           className="h-[56px] w-[56px] lg:h-[64px] lg:w-[64px]"
         />
-        <span className="font-display text-[10px] font-semibold tracking-wide text-foreground">
+        <span className="font-display text-xs font-semibold tracking-wide text-foreground">
           CARA
         </span>
       </button>
@@ -202,8 +210,10 @@ export function CaraLauncher({ bookSlug, contextDay, dayTitle }: CaraLauncherPro
 
             <CoachEmbed
               bookSlug={bookSlug}
+              onDayPage={onDayPage}
               contextDay={contextDay}
               dayTitle={dayTitle}
+              totalDays={totalDays}
             />
           </div>
         </div>
