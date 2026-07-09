@@ -16,7 +16,7 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# Environment variables must be present at build time
+# Environment variables must be present at build time (loaded from .env.local copied via COPY . .)
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_ENV=production
 
